@@ -1,0 +1,173 @@
+body{
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+    background-color: #F2F2F2;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    font: inherit;
+    background-color: inherit;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.fa-bars{
+    margin-left: 1rem;
+}
+
+.account{
+    border-radius: 50px;
+    padding: 0.7rem;
+    border: solid 2px black;
+    flex: none;
+    margin-right: 2rem;
+}
+
+h1{
+    font-family: "Grandstander", sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    text-align: center;
+    flex: auto;
+    margin-left: 2rem;
+}
+nav{
+    font-family: "Oswald", sans-serif;
+    font-size: 1.25rem;
+    padding: 1.8rem 0;
+    border: 2px solid black;
+    border-radius: 100px;
+    background-color: white;
+}
+nav > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: inherit;
+}
+nav > ul > li{
+    padding: 0 1rem;
+    font-weight: 500;
+    background-color: inherit;
+}
+nav li:hover{
+    transform: scale(1.1);
+    color: #2589BD;
+    font-weight: bold;
+}
+
+.intro{
+    width: 100%;
+    margin: 2.5rem auto;
+    text-align: center;
+    line-height: 3.5rem;
+}
+
+.intro > h2{
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.intro > p{
+    color: #828282;
+    font-size: 1.5rem;
+    width: 60%;
+    margin: auto;
+    line-height: 2.5rem;
+}
+
+.intro > button {
+    background-color: black;
+    padding: 0.9rem;
+    border-radius: 8px;
+    border: none;
+    box-shadow: none;
+}
+.intro > button > a {
+    background-color: black;
+    color: white;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A2FAA3;
+    padding: 1.5rem;
+}
+
+footer > p{
+    font-size: 1.5rem;
+    font-family: "Grandstander", sans-serif;
+}
+
+footer > p > span{
+    font-weight: bold;
+    background-color: inherit;
+}
+
+footer > ul{
+    display: flex;
+    background-color: inherit;
+}
+footer > ul > li {
+    font-family: "Inter", sans-serif;
+    font-size: 1.25rem;
+    margin: 0 1rem;
+    background-color: inherit;
+}
+
+footer li:hover{
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+footer > .social_media{
+    display: flex;
+}
+footer > .social_media > i{
+    padding: 0 0.5rem;
+}
+
+@media (max-width: 600px) {
+    header{
+        align-items: baseline;
+    }
+    h1{
+        font-size: 2.5rem;
+        margin: 0;
+    }
+    .intro > h2{
+        font-size: 2rem;
+        margin: auto;
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer ul{
+        margin: 2rem 0;
+    }
+    nav{
+        display: none;
+    }
+    .intro > p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .account{
+        display: none;
+    }
+}
+@media (min-width: 600px){
+    .fa-bars::before{
+        display: none;
+    }
+}

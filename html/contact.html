@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glob'Lyon - Accueil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <script src="https://kit.fontawesome.com/b412df9a8a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <i class="fa-solid fa-bars fa-2xl"></i>
+        <h1><a href="home.html">Glob'Lyon</a></h1>
+        <a href="./login.html">
+            <div class="account"><i class="fa-regular fa-user fa-lg"></i></div>
+        </a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/html/actu.html">Actu</a></li>
+            <li><a href="/html/activity.html">Activités</a></li>
+            <li><a href="/html/escpade.html">Escapade</a></li>
+            <li><a href="/html/adress.html">Nos bonnes adresses</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Contactez-nous !</h2>
+        <p>
+            Nous sommes toujours ravis de recevoir vos retours, questions, et suggestions. Que vous ayez une actualité à
+            partager, une question à poser, ou un partenariat à proposer, n'hésitez pas à nous contacter.
+        </p>
+
+        <address>
+            Adresse : <br>
+            Glob'Lyon <br>
+            123 Rue de la République <br>
+            69002 Lyon, France <br>
+
+            <a href="mailto:contact@globlyon.fr"></a>
+        </address>
+
+        <p>
+            Formulaire de Contact : <br>
+            Veuillez remplir le formulaire ci-dessous, et nous vous répondrons dans les plus brefs délais.
+        </p>
+        <form action="#">
+            <label for="name">Nom:</label>
+            <input type="text" name="name" id="name" size="5">
+            <label for="mail">Email:</label>
+            <input type="email" name="mail" id="mail">
+            <label for="subject">Sujet:</label>
+            <select name="subject" id="subject">
+                <option value="">Informations Générales</option>
+                <option value="">Proposition d'article</option>
+                <option value="">Problème technique</option>
+                <option value="">Partenariats et Publicité</option>
+                <option value="">Demande de collaboration</option>
+                <option value="">Feedback sur le site</option>
+            </select>
+            <label for="message">Message</label>
+            <textarea cols="15" name="message" id="message"></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </main>
+    <footer>
+        <p><span>Glob'</span>Lyon</p>
+        <ul>
+            <li><a href="/html/contact.html">Nous contacter</a></li>
+            <li><a href="/html/propos.html">A propos</a></li>
+            <li><a href="/html/legal.html">Mentions légales</a></li>
+        </ul>
+        <div class="social_media">
+            <i class="fa-brands fa-facebook-f fa-xl"></i>
+            <i class="fa-brands fa-instagram fa-xl"></i>
+            <i class="fa-brands fa-x-twitter fa-xl"></i>
+        </div>
+    </footer>
+</body>
+
+</html>

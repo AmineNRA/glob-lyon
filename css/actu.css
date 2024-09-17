@@ -1,0 +1,51 @@
+body{
+    background-image: url(/img/background_img/actu.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.article{
+    display: flex;
+    justify-content: center;
+    flex: 1 1 50%;
+    margin-bottom: 2rem;
+}
+
+.article__img{
+    position: relative;
+}
+
+img{
+    width: 100%;
+}
+
+.article__img--filter{
+    position: absolute;
+    background-color: #EEE9DA;
+    font-weight: bold;
+    border-radius: 26px;
+    padding: 1rem;
+    top: 10px;
+    left: 10px;
+}
+
+@media (max-width: 600px) {
+    .article{
+        flex-direction: column;
+        flex: auto;
+    }
+    .article__img{
+        width: 80%;
+        margin: auto;
+    }
+}
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+}

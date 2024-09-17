@@ -1,0 +1,31 @@
+main{
+    margin: 2rem 2rem;
+}
+h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+main > p {
+    margin: 2rem 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+input[type=text],[type=email], select{
+width: 30ch;
+margin: 0.5rem 0;
+}
+
+textarea{
+    width: 50ch;
+    height: 20ch;
+    margin: 0.5rem 0;
+}
+button{
+    width: 15ch;
+    height: 5ch;
+}

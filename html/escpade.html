@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glob'Lyon - Accueil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/escapade.css">
+    <script src="https://kit.fontawesome.com/b412df9a8a.js" crossorigin="anonymous"></script>
+    <script defer type="module" src="/script/escapade.js"></script>
+</head>
+
+<body>
+    <header>
+        <i class="fa-solid fa-bars fa-2xl"></i>
+        <h1><a href="home.html">Glob'Lyon</a></h1>
+        <a href="./login.html">
+            <div class="account"><i class="fa-regular fa-user fa-lg"></i></div>
+        </a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/html/actu.html">Actu</a></li>
+            <li><a href="/html/activity.html">Activités</a></li>
+            <li><a href="/html/escpade.html">Escapade</a></li>
+            <li><a href="/html/adress.html">Nos bonnes adresses</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="intro">
+            <h2>Escapade</h2>
+            <p>Découvrez des destinations de rêve et des trésors cachés.
+                Trouvez des idées, des conseils et des itinérairespour vos prochaines aventures.</p>
+        </div>
+        <ul class="filter">
+            <div class="dropdown">
+                <li>Durée de la randonnée <i class="fa-solid fa-caret-down"></i></li>
+                <ul class="dropdown-content">
+                    <li>1h</li>
+                    <li>2h</li>
+                    <li>3h</li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <li>Difficulté <i class="fa-solid fa-caret-down"></i></li>
+                <ul class="dropdown-content minus">
+                    <li>Facile</li>
+                    <li>Moyen</li>
+                    <li>Difficile</li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <li>Distance de Lyon<i class="fa-solid fa-caret-down"></i></li>
+                <ul class="dropdown-content">
+                    <li><span>5</span>km</li>
+                    <li><span>10</span>km</li>
+                    <li><span>15</span>km</li>
+                </ul>
+            </div>
+        </ul>
+
+        <div class="container">
+
+            <article class="article" data-difficulty='Facile' data-duration="1h" data-distance="2">
+                <div class="article__img">
+                    <img class="article__img--img" src="/img/escapade.png" alt="">
+                    <div class="article__img--filterOne">1h</div>
+                    <div class="article__img--filterTwo"><span>2</span>km</div>
+                    <div class="article__img--filterThree"></div>
+                </div>
+                <div class="article__info">
+                    <h3>Nom activité</h3>
+                    <p>Description d'acitivité courte de 2 lignes max</p>
+                </div>
+            </article>
+
+            <article class="article" data-difficulty='Facile' data-duration="1h" data-distance="10">
+                <div class="article__img">
+                    <img class="article__img--img" src="/img/escapade.png" alt="">
+                    <div class="article__img--filterOne">1h</div>
+                    <div class="article__img--filterTwo"><span>10</span>km</div>
+                    <div class="article__img--filterThree"></span></div>
+                </div>
+                <div class="article__info">
+                    <h3>Nom activité</h3>
+                    <p>Description d'acitivité courte de 2 lignes max</p>
+                </div>
+            </article>
+
+            <article class="article" data-difficulty='Facile' data-duration="2h" data-distance="8">
+                <div class="article__img">
+                    <img class="article__img--img" src="/img/escapade.png" alt="">
+                    <div class="article__img--filterOne">2h</div>
+                    <div class="article__img--filterTwo"><span>8</span>km</div>
+                    <div class="article__img--filterThree"></span></div>
+                </div>
+                <div class="article__info">
+                    <h3>Nom activité</h3>
+                    <p>Description d'acitivité courte de 2 lignes max</p>
+                </div>
+            </article>
+
+            <article class="article" data-difficulty='Difficile' data-duration="1h" data-distance="5">
+                <div class="article__img">
+                    <img class="article__img--img" src="/img/escapade.png" alt="">
+                    <div class="article__img--filterOne">1h</div>
+                    <div class="article__img--filterTwo"><span>5</span>km</div>
+                    <div class="article__img--filterThree"></div>
+                </div>
+                <div class="article__info">
+                    <h3>Nom activité</h3>
+                    <p>Description d'acitivité courte de 2 lignes max</p>
+                </div>
+            </article>
+
+            <article class="article" data-difficulty='Facile' data-duration="2h" data-distance="12">
+                <div class="article__img">
+                    <img class="article__img--img" src="/img/escapade.png" alt="">
+                    <div class="article__img--filterOne">2h</div>
+                    <div class="article__img--filterTwo"><span>12</span>km</div>
+                    <div class="article__img--filterThree"></div>
+                </div>
+                <div class="article__info">
+                    <h3>Nom activité</h3>
+                    <p>Description d'acitivité courte de 2 lignes max</p>
+                </div>
+            </article>
+
+            <article class="article" data-difficulty='Moyen' data-duration="3h" data-distance="15">
+                <div class="article__img">
+                    <img class="article__img--img" src="/img/escapade.png" alt="">
+                    <div class="article__img--filterOne">3h</div>
+                    <div class="article__img--filterTwo"><span>15</span>km</div>
+                    <div class="article__img--filterThree"></div>
+                </div>
+                <div class="article__info">
+                    <h3>Nom activité</h3>
+                    <p>Description d'acitivité courte de 2 lignes max</p>
+                </div>
+            </article>
+
+        </div>
+    </main>
+    <footer>
+        <p><span>Glob'</span>Lyon</p>
+        <ul>
+            <li><a href="/html/contact.html">Nous contacter</a></li>
+            <li><a href="/html/propos.html">A propos</a></li>
+            <li><a href="/html/legal.html">Mentions légales</a></li>
+        </ul>
+        <div class="social_media">
+            <i class="fa-brands fa-facebook-f fa-xl"></i>
+            <i class="fa-brands fa-instagram fa-xl"></i>
+            <i class="fa-brands fa-x-twitter fa-xl"></i>
+        </div>
+    </footer>
+</body>
+
+</html>

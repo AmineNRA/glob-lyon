@@ -1,0 +1,157 @@
+body{
+    background-image: url(/img/background_img/escapade.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.filter{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+}
+
+.filter  li{
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+}
+
+.filter  li:hover{
+    cursor: pointer;
+    background-color: #F8BD7F;
+}
+
+.fa-circle-xmark{
+    color: rgb(110, 23, 23);
+}
+
+.fa-circle-xmark:hover{
+    cursor: pointer;
+}
+
+.dropdown{
+    position: relative;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #F2F2F2;
+    padding: 1rem;
+    z-index: 1;
+    min-width: 11rem;
+    text-align: center;
+    box-shadow: 4px 3px 7px -2px #000000;
+}
+
+.minus{
+    min-width: 0;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown-content li{
+    padding: 1rem;
+}
+
+.dropdown:hover i{
+    transform: rotate(180deg);
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+    margin-bottom: 4rem ;
+}
+
+.article{
+    flex: 1 1 calc(50% - 5rem);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+.article__img{
+    margin: auto;
+    position: relative;
+}
+
+.article__img--filterOne{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 100px;
+    top: 16px;
+    background-color: #F8BD7F;
+    clip-path: circle(50% at 50% 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 0.8rem;
+}
+.article__img--filterTwo{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 60px;
+    top: 16px;
+    clip-path: circle(50% at 50% 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.article__img--filterThree{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 20px;
+    top: 16px;
+    background-color: yellow;
+    clip-path: circle(50% at 50% 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+} 
+
+.article__img--img{
+    border-radius: 20px;
+    width: 100%;
+}
+
+.article__info{
+    text-align: center;
+    margin-top: 1rem;
+    line-height: 2.3rem;
+}
+
+.article__info > h3{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.hidden{
+    display: none;
+}
+
+
+@media (max-width: 600px) {
+    .article{
+        flex: auto;
+        margin: 0 1.5rem 5rem 1.5rem;
+    }
+
+    .filter{
+        flex-direction: column;
+        align-items: center;
+    }
+}
