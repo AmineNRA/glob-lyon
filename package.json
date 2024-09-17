@@ -1,0 +1,32 @@
+{
+  "name": "glob-lyon",
+  "version": "1.0.0",
+  "description": "Site d'actualité sur Lyon",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index",
+    "dev": "node-dev index --respawn --clear --notify=false"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmineNRA/glob-lyon.git"
+  },
+  "author": "AmineNRA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmineNRA/glob-lyon/issues"
+  },
+  "homepage": "https://github.com/AmineNRA/glob-lyon#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.0",
+    "express-session": "^1.18.0",
+    "feather-icons": "^4.29.2",
+    "node-dev": "^8.0.0",
+    "slugify": "^1.6.6",
+    "validator": "^13.12.0"
+  }
+}
