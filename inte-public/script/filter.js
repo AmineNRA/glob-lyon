@@ -4,7 +4,6 @@ const liFilter = filter.children
 
 // On récupère tous les articles
 const article = document.querySelectorAll('.article')
-console.log(liFilter)
 
 // On écoute le click pour chaque élément de la liste des filtres
 Array.from(liFilter).forEach(filter => {

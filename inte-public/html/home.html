@@ -19,13 +19,29 @@
 
 <body>
     <header>
-        <i class="fa-solid fa-bars fa-2xl"></i>
+        <button class="button_small--screen" popovertarget="menu"><i class="fa-solid fa-bars fa-3x"></i></button>
+        <nav class="menu__small-screen">
+            <div class="menu" id="menu" popover>
+                <div class="button__account-close">
+                    <a href="./login.html"><i class="fa-regular fa-user fa-3x"></i></a>
+                    <button popovertarget="menu" popoveraction="hide"><i
+                            class="fa-regular fa-circle-xmark fa-3x"></i></button>
+                </div>
+                <ul>
+                    <li><a href="/html/actu.html">Actu</a></li>
+                    <li><a href="/html/activity.html">Activités</a></li>
+                    <li><a href="/html/escpade.html">Escapade</a></li>
+                    <li><a href="/html/adress.html">Nos bonnes adresses</a></li>
+                </ul>
+            </div>
+        </nav>
         <h1><a href="home.html">Glob'Lyon</a></h1>
         <a href="./login.html">
             <div class="account"><i class="fa-regular fa-user fa-lg"></i></div>
         </a>
     </header>
-    <nav>
+
+    <nav class="menu__largescreen">
         <ul>
             <li><a href="/html/actu.html">Actu</a></li>
             <li><a href="/html/activity.html">Activités</a></li>
@@ -44,11 +60,11 @@
                             alt="">
                     </li>
                     <li class="slide active"><img class="caroussel__img" src="/img/Lever-de-Soleil-sur-la-Saone.webp"
-                            alt="">
+                            loading="lazy" alt="">
                     </li>
                     <li class="slide"><img class="caroussel__img"
                             src="https://images.unsplash.com/photo-1692098071671-170061315a3a?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            alt="">
+                            alt="" loading="lazy">
                     </li>
                 </ul>
             </div>
@@ -68,7 +84,8 @@
                     <h3>Evenement n°2</h3>
                     <a href="" class="link">Lire <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-                <img class="article__img" src="/img/premium_photo-1673108852141-e8c3c22a4a22.avif" alt="">
+                <img class="article__img" src="/img/premium_photo-1673108852141-e8c3c22a4a22.avif" alt=""
+                    loading="lazy">
             </article>
 
             <article class="article">
@@ -76,7 +93,8 @@
                     <h3>Evenement n°3</h3>
                     <a href="" class="link">Lire <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-                <img class="article__img" src="/img/premium_photo-1673108852141-e8c3c22a4a22.avif" alt="">
+                <img class="article__img" src="/img/premium_photo-1673108852141-e8c3c22a4a22.avif" alt=""
+                    loading="lazy">
             </article>
 
             <article class="article">
@@ -84,7 +102,8 @@
                     <h3>Evenement n°4</h3>
                     <a href="" class="link">Lire <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-                <img class="article__img" src="/img/premium_photo-1673108852141-e8c3c22a4a22.avif" alt="">
+                <img class="article__img" src="/img/premium_photo-1673108852141-e8c3c22a4a22.avif" alt=""
+                    loading="lazy">
             </article>
         </div>
 

@@ -37,7 +37,57 @@ h1{
     flex: auto;
     margin-left: 2rem;
 }
-nav{
+
+.button_small--screen{
+    border-style: none;
+    background-color: transparent;
+}
+
+:popover-open{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: 100vh;
+    background-color: #F2F2F2;
+    box-shadow: 2px 2px 15px 0px #000000;
+}
+
+:popover-open ul{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+:popover-open .menu{
+    display: flex;
+    flex-direction: column;
+}
+
+:popover-open li{
+margin: 1rem 0;
+font-weight: 500;
+font-family: "Oswald", sans-serif;
+font-size: 2rem;
+}
+:popover-open li:hover{
+    transform: scale(1.1);
+    color: #2589BD;
+    font-weight: bold;
+}
+
+:popover-open .button__account-close{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem 0 1rem;
+}
+:popover-open .button__account-close button{
+    border-style: none;
+    background-color: transparent;
+}
+
+.menu__largescreen{
     font-family: "Oswald", sans-serif;
     font-size: 1.25rem;
     padding: 1.8rem 0;
@@ -45,18 +95,18 @@ nav{
     border-radius: 100px;
     background-color: white;
 }
-nav > ul{
+.menu__largescreen > ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
     background-color: inherit;
 }
-nav > ul > li{
+.menu__largescreen > ul > li{
     padding: 0 1rem;
     font-weight: 500;
     background-color: inherit;
 }
-nav li:hover{
+.menu__largescreen li:hover{
     transform: scale(1.1);
     color: #2589BD;
     font-weight: bold;
@@ -155,7 +205,7 @@ footer > .social_media > i{
     footer ul{
         margin: 2rem 0;
     }
-    nav{
+    .menu__largescreen{
         display: none;
     }
     .intro > p{
@@ -167,7 +217,7 @@ footer > .social_media > i{
     }
 }
 @media (min-width: 600px){
-    .fa-bars::before{
+    .button_small--screen{
         display: none;
     }
 }

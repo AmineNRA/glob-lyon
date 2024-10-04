@@ -19,13 +19,29 @@
 
 <body>
     <header>
-        <i class="fa-solid fa-bars fa-2xl"></i>
+        <button class="button_small--screen" popovertarget="menu"><i class="fa-solid fa-bars fa-3x"></i></button>
+        <nav class="menu__small-screen">
+            <div class="menu" id="menu" popover>
+                <div class="button__account-close">
+                    <a href="./login.html"><i class="fa-regular fa-user fa-3x"></i></a>
+                    <button popovertarget="menu" popoveraction="hide"><i
+                            class="fa-regular fa-circle-xmark fa-3x"></i></button>
+                </div>
+                <ul>
+                    <li><a href="/html/actu.html">Actu</a></li>
+                    <li><a href="/html/activity.html">Activités</a></li>
+                    <li><a href="/html/escpade.html">Escapade</a></li>
+                    <li><a href="/html/adress.html">Nos bonnes adresses</a></li>
+                </ul>
+            </div>
+        </nav>
         <h1><a href="home.html">Glob'Lyon</a></h1>
         <a href="./login.html">
             <div class="account"><i class="fa-regular fa-user fa-lg"></i></div>
         </a>
     </header>
-    <nav>
+
+    <nav class="menu__largescreen">
         <ul>
             <li><a href="/html/actu.html">Actu</a></li>
             <li><a href="/html/activity.html">Activités</a></li>

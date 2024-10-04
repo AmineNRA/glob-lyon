@@ -211,15 +211,3 @@ articles.forEach(article => {
 // let test = date.setDate(date.getDate() + 7)
 
 // console.log(test)
-
-
-
-const panier = ["banane", "fraise"]
-
-const corbeille = [...panier]
-
-corbeille.push('abricot')
-
-console.log(corbeille)
-
-console.log(panier)

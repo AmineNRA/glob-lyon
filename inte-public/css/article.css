@@ -1,0 +1,54 @@
+h2{
+    padding: 2rem 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.container{
+    display: flex;
+    gap: 300px;
+    margin: 2rem 0;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+
+article{
+    width: 50%;
+    margin-left: 1rem;
+}
+
+.image_inside{
+    width: 100vw;
+}
+
+aside{
+    width: 15%;
+}
+
+aside p{
+    font-size: 1.5rem;
+}
+
+p{
+    line-height: 1.5rem;
+    font-size: 1.25rem;
+    margin: 2rem 0;
+}
+
+.practical_info{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.info{
+    font-weight: bold;
+}
+
+footer{
+    padding: 0;
+}
