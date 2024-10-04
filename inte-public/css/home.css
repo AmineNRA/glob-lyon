@@ -144,6 +144,10 @@ h3{
 }
 
 .article__img{
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
     max-width: 30%;
     height: auto;
     border-radius: 8px;

@@ -41,6 +41,7 @@ h1{
 .button_small--screen{
     border-style: none;
     background-color: transparent;
+    padding-inline: 0;
 }
 
 :popover-open{
@@ -194,6 +195,7 @@ footer > .social_media > i{
     h1{
         font-size: 2.5rem;
         margin: 0;
+        display: inline;
     }
     .intro > h2{
         font-size: 2rem;

@@ -53,6 +53,10 @@ body{
     display: block;
 }
 
+.onClick{
+    display: block;
+}
+
 .dropdown-content li{
     padding: 1rem;
 }

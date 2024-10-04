@@ -1,7 +1,7 @@
 import express from 'express';
 import * as dotenv from 'dotenv';
 import session from 'express-session';
-import router from './App/router.js';
+import router from "./app/router.js";
 
 
 
@@ -17,7 +17,7 @@ app.use(session({
 }));
 
 app.set('view engine', 'ejs');
-app.set('views', './App/views');
+app.set('views', './app/views');
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('./inte-public'));
