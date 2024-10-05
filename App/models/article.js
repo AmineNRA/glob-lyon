@@ -60,6 +60,11 @@ Article.init({
         type: DataTypes.TEXT,
         allowNull: true,
     },
+    schedule: {
+        type: DataTypes.TEXT,
+        allowNull: true,
+    },
+
     view: {
         type: DataTypes.INTEGER,
         defaultValue: 0,

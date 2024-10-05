@@ -1,9 +1,22 @@
+import Article from "../models/article.js";
+import Tag from '../models/tag.js';
+
+
+
 export default {
     home: (req, res) => {
         res.render('home', { title: "Page d'acceuil", style: "home", script: "home" })
     },
-    activity: (req, res) => {
-        res.render('activity', { title: "Activité", style: "activity", script: "filter" })
+    activity: async (req, res) => {
+        const articles = await Article.findAll({
+            include: [
+                {
+                    model: Tag,
+                    attributes: ['label']
+                }
+            ]
+        });
+        res.render('activity', { title: "Activité", style: "activity", script: "filter", articles })
     },
     actu: (req, res) => {
         res.render('actu', { title: "Actualité", style: "actu" })

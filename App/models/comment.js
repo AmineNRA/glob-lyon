@@ -36,6 +36,6 @@ Comment.init({
 })
 
 Comment.belongsTo(Article, { foreignKey: 'article_id' });
-Comment.belongsTo(Tag, { foreignKey: 'tag_id' })
+Comment.belongsTo(User, { foreignKey: 'user_id' })
 
 export default Comment;

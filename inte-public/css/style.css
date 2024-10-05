@@ -1,6 +1,9 @@
+*{
+    box-sizing: border-box;
+}
 body{
     font-family: "Inter", sans-serif;
-    box-sizing: border-box;
+   
     background-color: #F2F2F2;
 }
 a{

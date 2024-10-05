@@ -48,3 +48,22 @@ Array.from(liFilter).forEach(e => {
         e.style.backgroundColor = "";
     });
 });
+
+//tronquer le surplus pour du responsive
+
+function truncateText() {
+    const textContainers = document.querySelectorAll('.text');
+    const maxHeight = 100;
+
+    textContainers.forEach(textContainer => {
+        textContainer.style.height = maxHeight + 'px';
+
+        if (window.innerWidth < 600) {
+            if (textContainer.scrollHeight > maxHeight) {
+                const text = textContainer.innerText;
+                textContainer.innerText = text.slice(0, 100) + '...';
+            }
+        }
+    })
+}
+window.addEventListener('resize', truncateText)

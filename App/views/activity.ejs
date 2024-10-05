@@ -16,46 +16,66 @@
             <li>Ateliers</li>
         </ul>
         <div class="container">
-            <article class="article">
-                <img class="article__img" src="/img/concert.jpg" alt="">
-                <div class="article__info">
-                    <span>Concerts</span>
-                    <div class="article__info--desc">
-                        <h3>Nom activité</h3>
-                        <p>Description d'activité courte de 2 lignes</p>
+            <% for( const article of articles ) { %>
+
+                <article class="article">
+                    <img class="article__img" src="<%= article.image %>" alt="">
+                    <div class="article__info">
+                        <span>
+                            <%=article.Tag.label%>
+                        </span>
+                        <div class="article__info--desc">
+                            <h3>
+                                <%= article.title %>
+                            </h3>
+                            <p class="text">
+                                <%= article.description %>
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </article>
-            <article class="article">
-                <img class="article__img" src="/img/theater.jpg" alt="">
-                <div class="article__info">
-                    <span>Théatre</span>
-                    <div class="article__info--desc">
-                        <h3>Nom activité</h3>
-                        <p>Description d'activité courte de 2 lignes</p>
-                    </div>
-                </div>
-            </article>
-            <article class="article">
-                <img class="article__img" src="/img/market.jpg" alt="">
-                <div class="article__info">
-                    <span>Marchés</span>
-                    <div class="article__info--desc">
-                        <h3>Nom activité</h3>
-                        <p>Description d'activité courte de 2 lignes</p>
-                    </div>
-                </div>
-            </article>
-            <article class="article">
-                <img class="article__img" src="/img/ateliers.jpg" alt="">
-                <div class="article__info">
-                    <span>Ateliers</span>
-                    <div class="article__info--desc">
-                        <h3>Nom activité</h3>
-                        <p>Description d'activité courte de 2 lignes</p>
-                    </div>
-                </div>
-            </article>
+                </article>
+
+                <% } %>
+                    <article class="article">
+                        <img class="article__img" src="/img/concert.jpg" alt="">
+                        <div class="article__info">
+                            <span>Concerts</span>
+                            <div class="article__info--desc">
+                                <h3>Nom activité</h3>
+                                <p>Description d'activité courte de 2 lignes</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <img class="article__img" src="/img/theater.jpg" alt="">
+                        <div class="article__info">
+                            <span>Théatre</span>
+                            <div class="article__info--desc">
+                                <h3>Nom activité</h3>
+                                <p>Description d'activité courte de 2 lignes</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <img class="article__img" src="/img/market.jpg" alt="">
+                        <div class="article__info">
+                            <span>Marchés</span>
+                            <div class="article__info--desc">
+                                <h3>Nom activité</h3>
+                                <p>Description d'activité courte de 2 lignes</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <img class="article__img" src="/img/ateliers.jpg" alt="">
+                        <div class="article__info">
+                            <span>Ateliers</span>
+                            <div class="article__info--desc">
+                                <h3>Nom activité</h3>
+                                <p>Description d'activité courte de 2 lignes</p>
+                            </div>
+                        </div>
+                    </article>
 
         </div>
 
