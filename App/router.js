@@ -6,6 +6,7 @@ const router = express.Router();
 
 router.get('/', mainController.home);
 router.get('/activite', mainController.activity);
+router.get('/article/:id', mainController.article);
 router.get('/actualite', mainController.actu);
 router.get('/adresse', mainController.adress);
 router.get('/contact', mainController.contact);

@@ -10,7 +10,7 @@
         <ul class="filter">
             <li class="test">Expositions</li>
             <li>Concerts</li>
-            <li>Théatre</li>
+            <li>Théâtre</li>
             <li>Festivals</li>
             <li>Marchés</li>
             <li>Ateliers</li>
@@ -19,15 +19,15 @@
             <% for( const article of articles ) { %>
 
                 <article class="article">
-                    <img class="article__img" src="<%= article.image %>" alt="">
+                    <a href="/article/<%article.id%>"><img class="article__img" src="<%= article.image %>" alt=""></a>
                     <div class="article__info">
-                        <span>
-                            <%=article.Tag.label%>
-                        </span>
+                        <span><%=article.Tag.label%></span>
                         <div class="article__info--desc">
-                            <h3>
-                                <%= article.title %>
-                            </h3>
+                            <a href="/article/<%=article.id%>">
+                                <h3>
+                                    <%= article.title %>
+                                </h3>
+                            </a>
                             <p class="text">
                                 <%= article.description %>
                             </p>

@@ -16,7 +16,17 @@ export default {
                 }
             ]
         });
+        console.log(articles[0].title)
         res.render('activity', { title: "Activité", style: "activity", script: "filter", articles })
+    },
+    article: async (req, res) => {
+        let article = await Article.findOne({
+            where: {
+                id: req.params.id,
+            },
+        });
+        console.log(article.image_inside)
+        await res.render('article', { title: article.title, style: "article", article: article })
     },
     actu: (req, res) => {
         res.render('actu', { title: "Actualité", style: "actu" })

@@ -1,0 +1,22 @@
+<%- include('partials/header') %>
+
+<main>
+    <h2><%=article.title%></h2>
+    <img class="image_inside" src="<%=article.image_inside%>" alt="">
+    <div class="container">
+        <article>
+            <%-article.content%>
+        </article>
+        <aside>
+            <span class="practical_info">Infos pratiques</span>
+            <div class="practical_info--text">
+                <p><span class="info">Lieu :</span> <br> <%=article.address%></p>
+                <p><span class="info">Dates :</span> <br><%=article.date%></p>
+                <p><span class="info">Horaires:</span> <br> <%=article.schedule%></p>
+                <p><span class="info">Tarifs :</span> <br> <%=article.price%></p>
+            </div>
+        </aside>
+    </div>
+</main>
+
+<%- include('partials/footer') %>
