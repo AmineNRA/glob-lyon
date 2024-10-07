@@ -23,11 +23,11 @@ Array.from(liFilter).forEach(filter => {
 
 const filterColors = {
     'Restauration': '#4AB4AB',
-    'Bars/club': '#F3EBBF',
+    'Bars/Clubs': '#F3EBBF',
     'Hébergement': '#971C10',
     'Bien-être/Santé': '#C5584E',
     'Concerts': '#09BC8A',
-    'Théatre': '#CE6A85',
+    'Théâtre': '#CE6A85',
     'Marchés': '#F7DD72',
     'Ateliers': '#F3654C',
     'Festivals': '#11BEBC',
@@ -49,6 +49,16 @@ Array.from(liFilter).forEach(e => {
     });
 });
 
+const articleTag = document.querySelectorAll('span')
+console.log(articleTag[0].textContent)
+
+articleTag.forEach(e => {
+    let color = filterColors[e.textContent];
+    if (color) {
+        e.style.backgroundColor = color;
+    }
+})
+
 //tronquer le surplus pour du responsive
 
 function truncateText() {
@@ -59,11 +69,11 @@ function truncateText() {
         textContainer.style.height = maxHeight + 'px';
 
         if (window.innerWidth < 600) {
-            if (textContainer.scrollHeight > maxHeight) {
+            if (textContainer.scrollWidth > maxHeight) {
                 const text = textContainer.innerText;
                 textContainer.innerText = text.slice(0, 100) + '...';
             }
         }
     })
 }
-window.addEventListener('resize', truncateText)
+window.addEventListener('resize', truncateText())

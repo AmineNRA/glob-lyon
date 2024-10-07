@@ -5,10 +5,14 @@ body{
 }
 
 .container{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    width: fit-content;
+    margin: 10rem auto 4rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 250px;
 }
+
 .article{
     display: flex;
     justify-content: center;

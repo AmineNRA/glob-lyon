@@ -1,3 +1,9 @@
+body{
+    background-image: url(/img/background_img/test.png);
+    background-size: cover;
+
+}
+
 .filter{
     display: flex;
     justify-content: center;
@@ -39,9 +45,10 @@
     padding: 1rem 1rem;
 }
 .article__info > span{
+    display: inline-block;
     background-color: #09BC8A;
     font-weight: bold;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 26px;
 }
 .article__info--desc{
@@ -75,7 +82,7 @@ h3{
         align-items: center;
     }
     .article__img{
-        width: 50%;
+        width: 100%;
     }
     .article__info > span{
         padding: 0.25rem .5rem;

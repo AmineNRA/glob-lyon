@@ -1,5 +1,7 @@
-import Article from "../models/article.js";
+import Article from '../models/article.js';
 import Tag from '../models/tag.js';
+import Escapade from "../models/escapade.js";
+import { Op } from "sequelize";
 
 
 
@@ -9,6 +11,11 @@ export default {
     },
     activity: async (req, res) => {
         const articles = await Article.findAll({
+            where: {
+                tag_id: {
+                    [Op.or]: [1, 2, 3, 4, 5, 6]
+                }
+            },
             include: [
                 {
                     model: Tag,
@@ -16,7 +23,6 @@ export default {
                 }
             ]
         });
-        console.log(articles[0].title)
         res.render('activity', { title: "Activité", style: "activity", script: "filter", articles })
     },
     article: async (req, res) => {
@@ -25,20 +31,33 @@ export default {
                 id: req.params.id,
             },
         });
-        console.log(article.image_inside)
-        await res.render('article', { title: article.title, style: "article", article: article })
+        await res.render('article', { title: article.title, style: "article", article })
     },
     actu: (req, res) => {
         res.render('actu', { title: "Actualité", style: "actu" })
     },
-    adress: (req, res) => {
-        res.render('adress', { title: "Les bonnes adresse", style: "activity", script: 'filter' })
+    adress: async (req, res) => {
+        const articles = await Article.findAll({
+            where: {
+                tag_id: {
+                    [Op.or]: [7, 8, 9, 10]
+                }
+            },
+            include: [
+                {
+                    model: Tag,
+                    attributes: ['label']
+                }
+            ]
+        });
+        res.render('adress', { title: "Les bonnes adresse", style: "activity", script: 'filter', articles })
     },
     contact: (req, res) => {
         res.render('contact', { title: "Page de contact", style: "contact" })
     },
-    escapade: (req, res) => {
-        res.render('escapade', { title: "Escapade", style: "escapade", script: "escapade" })
+    escapade: async (req, res) => {
+        const escapades = await Escapade.findAll({});
+        res.render('escapade', { title: "Escapade", style: "escapade", script: "escapade", escapades })
     },
     legal: (req, res) => {
         res.render('legal', { title: "Page mentions légales", style: "contact" })

@@ -163,12 +163,22 @@ articles.forEach(article => {
     }
 })
 
-// let filtreDifficulty = {
-//     "Facile": 'yellow',
-//     "Moyen": 'orange',
-//     "Difficile": 'red'
-// }
+let filterDifficulty = {
+    "Facile": 'yellow',
+    "Moyen": 'orange',
+    "Difficile": 'red'
+}
 
+
+const levelDifficulty = document.querySelectorAll('.article__img--filterThree')
+
+console.log(levelDifficulty[0].textContent)
+levelDifficulty.forEach(e => {
+    let color = filterDifficulty[e.textContent];
+    if (color) {
+        e.style.backgroundColor = color
+    }
+})
 // const levelDifficulty = document.querySelectorAll('.article__img--filterThree > span');
 // console.log(levelDifficulty)
 

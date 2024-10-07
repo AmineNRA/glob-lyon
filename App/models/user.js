@@ -1,5 +1,6 @@
 import { Model, DataTypes } from 'sequelize';
 import sequelize from '../database.js';
+import bcrypt from 'bcrypt'
 
 
 class User extends Model { };
@@ -7,9 +8,9 @@ class User extends Model { };
 User.init({
     pseudo: {
         type: DataTypes.TEXT,
-        allowNull: false,
+        allowNull: true,
         validate: {
-            notEmpty: true,
+            notEmpty: false,
         }
     },
     email: {
@@ -17,8 +18,14 @@ User.init({
         allowNull: false,
         unique: true,
         validate: {
-            isEmail: true,
-            notEmpty: true,
+            isEmail: {
+                args: true,
+                msg: "L'email n'est pas valide"
+            },
+            notEmpty: {
+                args: true,
+                msg: "La case email ne peut pas être vide"
+            }
         }
     },
     password: {
@@ -45,6 +52,11 @@ User.init({
     sequelize,
     modelName: 'User',
     tableName: 'user',
+})
+
+User.beforeCreate(async (user) => {
+    const hash = await bcrypt.hash(user.password, 10)
+    user.password = hash
 })
 
 export default User

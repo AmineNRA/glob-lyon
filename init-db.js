@@ -378,7 +378,7 @@ try {
         like: 0,
         tag_id: 6,
         user_id: 1
-    })
+    });
     Article.create({
         title: "Atelier de Parfum à Lyon",
         description: "Plongez dans l'univers olfactif lors d'un atelier de parfum à Lyon, où vous apprendrez à créer votre propre fragrance unique, guidé par des experts.",
@@ -395,7 +395,531 @@ try {
         like: 0,
         tag_id: 6,
         user_id: 1
-    })
+    });
+    Article.create({
+        title: "Les Trois Dômes",
+        description: "Perché au sommet de l’hôtel Sofitel, Les Trois Dômes offre une cuisine gastronomique française raffinée avec une vue imprenable sur Lyon.",
+        image: "/img/articles/article20.webp",
+        image_inside: "/img/articles/articles_inside/article_inside20.webp",
+        content: "<p>Situé au dernier étage du Sofitel Lyon Bellecour, Les Trois Dômes est un restaurant gastronomique réputé pour ses plats délicats et raffinés, accompagnés d'une vue panoramique exceptionnelle sur la ville. Le chef Christian Lherm met en avant des produits de saison dans une cuisine française inventive, sublimée par un cadre chic et élégant. Une adresse idéale pour un dîner d'exception ou un moment romantique, où la vue est tout aussi époustouflante que les mets.</p>",
+        address: "20 Quai Gailleton, 69002 Lyon",
+        price: "Menus à partir de 80 €",
+        schedule: "Ouvert du mardi au samedi, de 12h à 13h30 et de 19h30 à 21h30",
+        view: 0,
+        like: 0,
+        tag_id: 7,
+        user_id: 1
+    });
+    Article.create({
+        title: "Bistrot Têtedoie",
+        description: "Le Bistrot Têtedoie propose une cuisine de bistrot revisitée par le chef étoilé Christian Têtedoie, avec une vue imprenable sur Lyon.",
+        image: "/img/articles/article21.webp",
+        image_inside: "/img/articles/articles_inside/article_inside21.webp",
+        content: "<p>Niché sur les hauteurs de Fourvière, le Bistrot Têtedoie est un address incontournable pour savourer une cuisine de bistrot revisitée par le chef étoilé Christian Têtedoie. Proposant des plats gourmands et accessibles, le bistrot offre également une vue splendide sur la ville de Lyon, créant une expérience unique. Idéal pour un déjeuner ou un dîner convivial dans un cadre élégant mais décontracté.</p>",
+        address: "4 Rue Professeur Pierre Marion, 69005 Lyon",
+        price: "Menus à partir de 35 €",
+        schedule: "Ouvert tous les jours, de 12h à 14h et de 19h à 22h",
+        view: 0,
+        like: 0,
+        tag_id: 7,
+        user_id: 1
+    });
+    Article.create({
+        title: "Culina Hortus",
+        description: "Culina Hortus est un restaurant 100 % végétarien, où la haute gastronomie se marie avec des produits locaux et de saison.",
+        image: "/img/articles/article22.webp",
+        image_inside: "/img/articles/articles_inside/article_inside22.webp",
+
+        content: "<p>Culina Hortus, niché en plein cœur du 1er arrondissement, est une référence en matière de gastronomie végétarienne à Lyon. Élaborant des plats aussi esthétiques que savoureux, ce restaurant prouve que la cuisine végétarienne peut être sophistiquée et inventive. En privilégiant les produits de saison et locaux, le chef propose une expérience culinaire exceptionnelle qui séduira aussi bien les végétariens que les amateurs de grande cuisine.</p>",
+        address: "38 Rue de l'Arbre Sec, 69001 Lyon",
+        price: " Menus à partir de 45 €",
+        schedule: " Ouvert du mardi au samedi, de 12h à 14h et de 19h à 22h",
+        view: 0,
+        like: 0,
+        tag_id: 7,
+        user_id: 1
+    });
+    Article.create({
+        title: "La Mère Brazier",
+        description: "La Mère Brazier, institution lyonnaise depuis 1921, allie tradition et innovation dans une cuisine gastronomique française reconnue et étoilée.",
+        image: "/img/articles/article23.webp",
+        image_inside: "/img/articles/articles_inside/article_inside23.webp",
+        content: "<p>Véritable institution de la gastronomie lyonnaise, La Mère Brazier a été fondée en 1921 et continue de porter haut les valeurs de la cuisine française. Étoilé au Michelin, ce restaurant légendaire est dirigé par le chef Mathieu Viannay, qui allie tradition et modernité dans ses créations culinaires. Des plats emblématiques comme la poularde demi-deuil ou la tarte aux pralines sont revisités avec finesse, dans un cadre élégant et historique.</p>",
+        address: "12 Rue Royale, 69001 Lyon",
+        schedule: "Ouvert du mardi au vendredi, de 12h à 13h30 et de 19h30 à 21h30",
+        price: " Menus à partir de 75 €",
+        view: 0,
+        like: 0,
+        tag_id: 7,
+        user_id: 1
+    });
+    Article.create({
+        title: "Lyon's GastroPub",
+        description: "Lyon's GastroPub mêle esprit de pub et gastronomie, proposant une cuisine bistronomique dans une ambiance chaleureuse et conviviale.",
+
+        image: "/img/articles/article24.webp",
+        image_inside: "/img/articles/articles_inside/article_inside24.webp",
+
+        content: "<p>Le Lyon's GastroPub se distingue par son concept original : fusionner l’ambiance détendue d’un pub avec une cuisine bistronomique créative. Situé au cœur du 5ème arrondissement, ce restaurant propose des plats élaborés à partir de produits frais et de saison, avec une carte qui évolue au fil des mois. C'est l'endroit idéal pour se détendre entre amis autour d’un bon repas et de bières artisanales soigneusement sélectionnées.</p>",
+        address: "7 Quai des Célestins, 69005 Lyon",
+        price: "Plats à partir de 25 €",
+        schedule: "Ouvert du mardi au dimanche, de 12h à 14h30 et de 19h à 23h",
+        view: 0,
+        like: 0,
+        tag_id: 7,
+        user_id: 1
+    });
+    Article.create({
+        title: "Café Hôtel Dieu",
+        description: "Le Café Hôtel Dieu, situé au sein du Grand Hôtel-Dieu, propose une cuisine moderne et de qualité dans un cadre historique emblématique de Lyon.",
+        image: "/img/articles/article25.webp",
+        image_inside: "/img/articles/articles_inside/article_inside25.webp",
+        content: "<p>Au cœur de l’iconique Grand Hôtel-Dieu, le Café Hôtel Dieu propose une cuisine française moderne et raffinée. Ce restaurant offre un cadre unique, mêlant histoire et modernité, idéal pour un déjeuner d’affaires ou un dîner en famille. La carte, élaborée à partir de produits frais et de saison, met à l’honneur des plats simples mais élégants, sublimés par la touche créative du chef.</p>",
+        address: "1 Place de l’Hôpital, 69002 Lyon",
+        price: "Menus à partir de 30 €",
+        schedule: "Ouvert tous les jours, de 12h à 14h30 et de 19h à 22h30",
+        view: 0,
+        like: 0,
+        tag_id: 7,
+        user_id: 1
+    });
+    Article.create({
+        title: "Er Baretto",
+        description: "Er Baretto est un petit restaurant italien authentique, proposant des spécialités de pâtes et des plats traditionnels de l'Italie dans un cadre intimiste.",
+        image: "/img/articles/article26.webp",
+        image_inside: "/img/articles/articles_inside/article_inside26.webp",
+        content: "<p>Er Baretto, situé dans le quartier du Vieux Lyon, est un charmant restaurant italien où les pâtes fraîches sont à l’honneur. Avec son ambiance chaleureuse et intimiste, ce restaurant propose des plats typiques et généreux, élaborés à partir de produits italiens de qualité. Idéal pour un dîner romantique ou entre amis, Er Baretto est un petit coin d’Italie en plein cœur de Lyon, à ne pas manquer pour les amateurs de cuisine italienne.</p>",
+        address: "43 Rue Franklin, 69002 Lyon",
+        price: "Plats à partir de 20 €",
+        schedule: "Ouvert du mardi au samedi, de 12h à 14h et de 19h à 22h30",
+        view: 0,
+        like: 0,
+        tag_id: 7,
+        user_id: 1
+    });
+    Article.create({
+        title: "Le Fantôme de l’Opéra",
+        description: "Le Fantôme de l’Opéra est un bar caché au charme mystérieux, proposant des cocktails créatifs dans une ambiance feutrée et élégante.",
+        image: "/img/articles/article27.webp",
+        image_inside: "/img/articles/articles_inside/article_inside27.webp",
+        content: "<p>Niché dans le quartier des Terreaux, Le Fantôme de l’Opéra est un bar à cocktails à l’atmosphère intrigante et sophistiquée. Inspiré par l'univers du théâtre et de l'opéra, ce speakeasy propose des cocktails créatifs, réalisés à partir d'ingrédients de qualité et souvent accompagnés d'une touche théâtrale. Ce lieu intimiste et hors du temps est idéal pour une soirée entre amis ou un rendez-vous romantique, dans un cadre élégant où règne un véritable mystère.</p>",
+        address: "19 Rue Royale, 69001 Lyon",
+        price: "Cocktails à partir de 12 €",
+        schedule: "Ouvert du mercredi au dimanche, de 18h à 1h",
+        view: 0,
+        like: 0,
+        tag_id: 8,
+        user_id: 1
+    });
+    Article.create({
+        title: "L’Officine",
+        description: "L'Officine, situé au cœur du Grand Hôtel-Dieu, est un bar élégant qui propose des cocktails sophistiqués dans un cadre historique exceptionnel.",
+        image: "/img/articles/article28.webp",
+        image_inside: "/img/articles/articles_inside/article_inside28.webp",
+        content: "Installé au sein du majestueux Grand Hôtel-Dieu, L'Officine est un bar à cocktails d'exception qui allie l'histoire des lieux à une carte de boissons des plus contemporaines. Connu pour ses créations audacieuses et raffinées, ce bar est le parfait mélange entre élégance, modernité et patrimoine lyonnais. Avec son ambiance feutrée et son décor soigné, L'Officine est l'endroit idéal pour siroter des cocktails ou profiter d'un verre de vin dans un cadre prestigieux.",
+        address: "4 Place de l’Hôpital, 69002 Lyon",
+        price: "Cocktails à partir de 14 €",
+        schedule: "Ouvert tous les jours, de 17h à 1h",
+        view: 0,
+        like: 0,
+        tag_id: 8,
+        user_id: 1
+    });
+    Article.create({
+        title: "Le Grisbi",
+        description: "Le Grisbi est un bar à cocktails inspiré des films de gangsters des années 50, offrant des créations uniques dans une ambiance rétro et chic.",
+        image: "/img/articles/article29.webp",
+        image_inside: "/img/articles/articles_inside/article_inside29.webp",
+        content: "<p>Situé dans le 6ème arrondissement de Lyon, Le Grisbi plonge ses clients dans une ambiance rétro, rappelant les films de gangsters des années 50. Ce bar à cocktails propose une large sélection de créations maison, élaborées avec soin par des mixologues passionnés. Le cadre, inspiré des films noirs, donne au lieu un charme singulier et intemporel, parfait pour une soirée entre amis ou un afterwork décontracté.</p>",
+        address: "8 Rue du Commandant Fuzier, 69006 Lyon",
+        price: "Cocktails à partir de 10 €",
+        schedule: "Ouvert du mardi au samedi, de 18h à 2h",
+        view: 0,
+        like: 0,
+        tag_id: 8,
+        user_id: 1
+    }),
+        Article.create({
+            title: "Le Dôme",
+            description: "Le Dôme est un bar raffiné niché au sein de l’Intercontinental Lyon - Hôtel-Dieu, célèbre pour son cadre majestueux sous une coupole de verre et ses cocktails d’exception.",
+            image: "/img/articles/article30.webp",
+            image_inside: "/img/articles/articles_inside/article_inside30.webp",
+
+            content: "<p>Au cœur de l’Intercontinental Lyon - Hôtel-Dieu se trouve Le Dôme, un bar à l'architecture impressionnante sous une coupole de verre de 32 mètres de haut. Ce lieu élégant et majestueux propose une carte de cocktails raffinés et de grands crus, servis dans un cadre à couper le souffle. Que ce soit pour un apéritif, un digestif ou un moment de détente l’après-midi, Le Dôme est l’un des bars les plus spectaculaires de Lyon, alliant histoire et modernité.</p>",
+            address: "20 Quai Jules Courmont, 69002 Lyon",
+            price: "Cocktails à partir de 18 €",
+            schedule: "Ouvert tous les jours, de 11h à minuit",
+            view: 0,
+            like: 0,
+            tag_id: 8,
+            user_id: 1
+        }),
+        Article.create({
+            title: "L’Orangerie",
+            description: "L’Orangerie, situé dans le quartier de Confluence, est un bar à cocktails proposant des créations raffinées dans une ambiance végétale et lumineuse.",
+
+            image: "/img/articles/article31.webp",
+            image_inside: "/img/articles/articles_inside/article_inside31.webp",
+            content: "<p>L’Orangerie, véritable havre de paix dans le quartier moderne de Confluence, propose des cocktails créatifs dans un cadre lumineux et verdoyant. Avec ses grandes verrières et son décor végétal, ce bar offre une atmosphère détendue et élégante, parfaite pour déguster des boissons raffinées après une journée de travail ou pour se retrouver entre amis. L’Orangerie allie innovation et tradition, avec des cocktails classiques revisités par des mixologues talentueux.</p>",
+            address: "112 Cours Charlemagne, 69002 Lyon",
+            price: "Cocktails à partir de 12 €",
+            schedule: "Ouvert du lundi au samedi, de 17h à 1h",
+            view: 0,
+            like: 0,
+            tag_id: 8,
+            user_id: 1
+        }),
+        Article.create({
+            title: "Le Sucre",
+            description: "Le Sucre est un club emblématique installé sur un rooftop, proposant une programmation éclectique de musique électronique et des soirées avec vue sur Lyon.",
+            image: "/img/articles/article32.webp",
+            image_inside: "/img/articles/articles_inside/article_inside32.webp",
+            content: "<p>Situé au sommet de La Sucrière, dans le quartier de la Confluence, Le Sucre est l’un des clubs les plus iconiques de Lyon. Avec son rooftop offrant une vue imprenable sur la ville, il est devenu un lieu incontournable pour les amateurs de musique électronique. Le Sucre propose une programmation variée, allant de la house à la techno en passant par des événements artistiques et culturels. Avec une ambiance à la fois branchée et conviviale, c'est l’endroit idéal pour danser toute la nuit sous les étoiles.</p>",
+            address: "50 Quai Rambaud, 69002 Lyon",
+            price: "Entrée à partir de 15 €",
+            schedule: "Ouvert le week-end, de 23h à 5h",
+            view: 0,
+            like: 0,
+            tag_id: 8,
+            user_id: 1
+        }),
+        Article.create({
+            title: "Le Petit Salon",
+            description: "Le Petit Salon est un club lyonnais branché, réputé pour sa programmation pointue en matière de musiques électroniques et son ambiance underground.",
+            image: "/img/articles/article33.webp",
+            image_inside: "/img/articles/articles_inside/article_inside33.webp",
+            content: "<p>Le Petit Salon, situé dans le 7ème arrondissement de Lyon, s’impose comme une référence en matière de musique électronique. Ce club underground accueille des artistes de renom ainsi que des talents émergents de la scène électro. Avec ses deux salles et ses systèmes sonores puissants, Le Petit Salon est le lieu de prédilection des noctambules lyonnais qui recherchent des soirées de qualité dans une ambiance intimiste et énergique.</p>",
+            address: "3 Rue de Cronstadt, 69007 Lyon",
+            price: "Entrée à partir de 10 €",
+            schedule: "Ouvert du jeudi au samedi, de 23h à 6h",
+            view: 0,
+            like: 0,
+            tag_id: 8,
+            user_id: 1
+        }),
+        Article.create({
+            title: "Le Sonic",
+            description: "Le Sonic, club iconique de Lyon, est un bateau qui accueille des concerts et des soirées électro dans un cadre intimiste sur la Saône.",
+            image: "/img/articles/article34.webp",
+            image_inside: "/img/articles/articles_inside/article_inside34.webp",
+            content: "<p>Amarré sur les quais de la Saône, Le Sonic est un club original et atypique installé sur une péniche. Connu pour sa programmation éclectique, allant des concerts indie-rock aux soirées électroniques, Le Sonic est l'un des lieux alternatifs les plus prisés des noctambules lyonnais. Avec son ambiance intimiste et son cadre unique, ce club propose une expérience différente, où les amateurs de musique live et d’électro peuvent se retrouver pour des soirées conviviales et alternatives.</p>",
+            address: "4 Quai des Étroits, 69005 Lyon",
+            price: "Entrée à partir de 8 €",
+            schedule: "Ouvert du mercredi au samedi, de 21h à 5h",
+            view: 0,
+            like: 0,
+            tag_id: 8,
+            user_id: 1
+        }),
+        Article.create({
+            title: "Hôtel de Verdun 1882, Repaire de Globe-Chineurs",
+            description: "L’Hôtel de Verdun 1882 est un établissement unique et chaleureux, mêlant décoration vintage et ambiance conviviale, idéal pour les voyageurs à la recherche de charme et d’authenticité.",
+            image: "/img/articles/article35.webp",
+            image_inside: "/img/articles/articles_inside/article_inside35.webp",
+            content: "<p>Situé au cœur de Lyon, l’Hôtel de Verdun 1882 est bien plus qu’un simple lieu d’hébergement : c'est un véritable repaire pour les voyageurs en quête d'originalité et d'authenticité. La décoration chinée avec soin et l’atmosphère vintage de cet hôtel en font une adresse incontournable pour les amateurs de charme et de singularité. Avec ses chambres à l’ambiance cosy et son accueil chaleureux, l’Hôtel de Verdun 1882 offre une expérience unique aux visiteurs souhaitant découvrir Lyon dans une atmosphère conviviale et détendue.</p>",
+            address: "82 Rue de la Charité, 69002 Lyon",
+            price: "À partir de 120 € par nuit",
+            schedule: "Réception ouverte 24h/24",
+            view: 0,
+            like: 0,
+            tag_id: 9,
+            user_id: 1
+        }),
+        Article.create({
+            title: "Intercontinental Lyon – Hôtel-Dieu",
+            description: "L'Intercontinental Lyon est un hôtel de luxe au sein de l’emblématique Grand Hôtel-Dieu, offrant une expérience raffinée dans un cadre historique et majestueux.",
+            image: "/img/articles/article36.webp",
+            image_inside: "/img/articles/articles_inside/article_inside36.webp",
+            content: "<p>Installé dans l’un des plus beaux monuments historiques de Lyon, l’Intercontinental Lyon - Hôtel-Dieu est un hôtel 5 étoiles alliant élégance contemporaine et patrimoine. Son architecture spectaculaire, avec sa coupole emblématique et ses vastes espaces, en fait un lieu d’exception. L’établissement propose des chambres luxueuses avec vue sur le Rhône ou les jardins intérieurs, ainsi qu’un bar somptueux sous une coupole magistrale. Idéal pour un séjour d’exception ou un moment de détente dans un cadre prestigieux.</p>",
+            address: "20 Quai Jules Courmont, 69002 Lyon",
+            price: "À partir de 350 € par nuit",
+            schedule: "Réception ouverte 24h/24",
+            view: 0,
+            like: 0,
+            tag_id: 9,
+            user_id: 1,
+        }),
+        Article.create({
+            title: "The Ruck Hotel",
+            description: "The Ruck est un hôtel moderne et sportif, parfait pour les amateurs de rugby et les voyageurs à la recherche d’un séjour dynamique près du Stade de Gerland.",
+            image: "/img/articles/article37.webp",
+            image_inside: "/img/articles/articles_inside/article_inside37.webp",
+            content: "<p>Situé à proximité du Stade de Gerland, The Ruck est un hôtel moderne qui célèbre l’esprit du rugby et offre une ambiance dynamique et sportive. Parfait pour les passionnés de sport ou les voyageurs souhaitant séjourner dans un cadre décontracté, l’hôtel propose des chambres confortables et bien équipées. Son restaurant-bar est également un lieu convivial où se retrouver avant ou après un match. Un établissement idéal pour un séjour à la fois sportif et confortable à Lyon.</p>",
+            address: "345 Avenue Jean Jaurès, 69007 Lyon",
+            price: "À partir de 100 € par nuit",
+            schedule: "Réception ouverte 24h/24",
+            view: 0,
+            like: 0,
+            tag_id: 9,
+            user_id: 1
+        }),
+        Article.create({
+            title: "Moxy Lyon",
+            description: "Moxy Lyon est un hôtel moderne et branché, idéal pour les voyageurs jeunes et dynamiques qui recherchent un cadre à la fois design et convivial.",
+            image: "/img/articles/article38.webp",
+            image_inside: "/img/articles/articles_inside/article_inside38.webp",
+            content: "<p>L’hôtel Moxy Lyon, situé dans le quartier de la Confluence, est un établissement jeune et branché, qui attire une clientèle à la recherche de design et d’ambiance décontractée. Avec ses chambres modernes et épurées, son lobby animé, et son bar convivial où les clients peuvent se retrouver, le Moxy Lyon offre une expérience unique. Parfait pour les voyageurs d’affaires ou les jeunes explorateurs, cet hôtel allie fonctionnalité et convivialité dans un cadre stylé.</p>",
+            address: "81 Quai Perrache, 69002 Lyon",
+            price: " À partir de 130 € par nuit",
+            schedule: "Réception ouverte 24h/24",
+            view: 0,
+            like: 0,
+            tag_id: 9,
+            user_id: 1
+        }),
+        Article.create({
+            title: "Pilo Lyon",
+            description: "Pilo Lyon est une auberge hybride mêlant chambres privées et dortoirs partagés dans un cadre moderne et design, située dans le quartier animé de la Croix-Rousse.",
+            image: "/img/articles/article39.webp",
+            image_inside: "/img/articles/articles_inside/article_inside39.webp",
+            content: "<p>Pilo Lyon, niché dans le quartier animé de la Croix-Rousse, est un concept d’hébergement hybride qui combine l’esprit des auberges de jeunesse avec le confort moderne. Offrant des chambres privées et des dortoirs design, Pilo est l’endroit idéal pour les voyageurs solo, les groupes d’amis ou les familles en quête d’un hébergement convivial et abordable. Avec ses espaces communs chaleureux et son rooftop avec vue sur la ville, Pilo invite à la détente et aux rencontres dans un cadre trendy et accessible.</p>",
+            address: "10 Montée des Carmélites, 69001 Lyon",
+            price: "À partir de 50 € par nuit en dortoir, 120 € en chambre privée",
+            schedule: "Réception ouverte 24h/24",
+            view: 0,
+            like: 0,
+            tag_id: 9,
+            user_id: 1
+        }),
+        Article.create({
+            title: "Villa Maïa",
+            description: "Villa Maïa est un hôtel 5 étoiles niché sur la colline de Fourvière, offrant luxe et tranquillité avec des vues panoramiques sur Lyon.",
+            image: "/img/articles/article40.webp",
+            image_inside: "/img/articles/articles_inside/article_inside40.webp",
+            content: "<p>Perchée sur la colline de Fourvière, Villa Maïa est un hôtel 5 étoiles qui combine luxe, sérénité et vues imprenables sur Lyon. Cet établissement raffiné propose des chambres élégantes et des suites spacieuses, toutes décorées avec goût et dotées de grandes baies vitrées. Avec son spa luxueux et sa piscine intérieure à débordement, Villa Maïa est un véritable havre de paix pour ceux qui cherchent à se détendre dans un cadre exceptionnel. Son emplacement privilégié permet aussi de découvrir facilement les trésors de Lyon.</p>",
+            address: "8 Rue Pierre Marion, 69005 Lyon",
+            price: "À partir de 400 € par nuit",
+            schedule: "Réception ouverte 24h/24",
+            view: 0,
+            like: 0,
+            tag_id: 9,
+            user_id: 1
+        }),
+        Article.create({
+            title: "Les Cent Ciels",
+            description: "Les Cent Ciels est un hammam et spa luxueux inspiré des traditions orientales, offrant un espace de détente et de bien-être dans un cadre somptueux.",
+            image: "/img/articles/article41.webp",
+            image_inside: "/img/articles/articles_inside/article_inside41.webp",
+            content: "<p>Situé dans le 9e arrondissement de Lyon, Les Cent Ciels est un havre de paix qui transporte ses visiteurs dans un univers de bien-être inspiré des hammams orientaux. Avec ses vastes bains de vapeur, son décor raffiné aux touches d'Orient, et ses soins traditionnels, ce spa offre une expérience unique et dépaysante. Que ce soit pour profiter d’un massage relaxant, d’un gommage ou d’un moment dans les bains chauds, Les Cent Ciels promet une parenthèse enchantée au cœur de la ville.</p>",
+            address: "7 Rue des Aqueducs, 69009 Lyon",
+            price: "Entrée à partir de 45 €, soins à partir de 30 €",
+            schedule: "Ouvert tous les jours de 10h à 22h",
+            view: 0,
+            like: 0,
+            tag_id: 10,
+            user_id: 1
+        }),
+        Article.create({
+            title: "Calicéo",
+            description: "Calicéo est un centre de bien-être et balnéothérapie, proposant des bassins chauffés, des jacuzzis, et des espaces de relaxation pour une détente totale.",
+            image: "/img/articles/article42.webp",
+            image_inside: "/img/articles/articles_inside/article_inside42.webp",
+            content: "<p>À quelques minutes du centre de Lyon, Calicéo est l’un des plus grands centres de balnéothérapie de la région. Cet espace dédié au bien-être dispose de plusieurs bassins intérieurs et extérieurs, tous chauffés à 33°C, offrant une expérience relaxante en toute saison. Entre jacuzzis, hammams, saunas et jets massants, Calicéo propose un parcours de détente complet pour le corps et l’esprit. C’est le lieu parfait pour se ressourcer après une journée bien remplie ou simplement s’offrir un moment de relaxation.</p>",
+            address: "Avenue du Docteur Schweitzer, 69150 Décines-Charpieu (à 20 minutes de Lyon)",
+            price: "Entrée à partir de 19 € pour 2 heures",
+            schedule: " Ouvert tous les jours de 10h à 21h",
+            view: 0,
+            like: 0,
+            tag_id: 10,
+            user_id: 1
+        }),
+        Article.create({
+            title: "Les Bains de l’Opéra",
+            description: "Les Bains de l'Opéra est un spa urbain alliant modernité et tradition, proposant hammam, sauna, et soins variés au cœur de Lyon.",
+            image: "/img/articles/article43.webp",
+            image_inside: "/img/articles/articles_inside/article_inside43.webp",
+            content: "<p>Situé au cœur de la Presqu’île, Les Bains de l’Opéra est un spa urbain où se mêlent modernité et rituels de bien-être ancestraux. Ce centre de soins propose un hammam traditionnel, un sauna, et une large gamme de massages et gommages. Que ce soit pour une pause détente rapide ou une demi-journée de soins complets, Les Bains de l’Opéra offre une oasis de calme en plein centre-ville. C’est le lieu idéal pour s'évader du tumulte quotidien tout en restant en plein cœur de Lyon.</p>",
+            address: "20 Rue Joseph Serlin, 69001 Lyon",
+            price: "Entrée à partir de 30 €, soins à partir de 40 €",
+            schedule: " Ouvert du mardi au dimanche, de 10h à 20h",
+            view: 0,
+            like: 0,
+            tag_id: 10,
+            user_id: 1
+        }),
+        Escapade.bulkCreate([{
+            title: "Randonnée au Bois de Serres, Écully",
+            description: "Cette randonnée accessible dans le Bois de Serres à Écully offre un cadre naturel exceptionnel, parfait pour une sortie en pleine nature à proximité immédiate de Lyon. Un parcours à travers forêts, ruisseaux et paysages préservés.",
+            image: "img/escapades/escapade1.webp",
+            image_inside: "img/escapades/escapades_inside/escapade_inside1.webp",
+            content: `<h3>Départ et immersion immédiate dans la nature</h3>
+          <p>Le Bois de Serres, situé à quelques kilomètres à l'ouest de Lyon, est l'un des trésors naturels d'Écully. Cette randonnée commence au parc de l'Abbaye, un lieu emblématique d'Écully où la nature se mêle à l'histoire locale. Dès les premiers pas, le randonneur est plongé dans un cadre boisé dense, caractérisé par la diversité des essences d'arbres. Le départ, facile et accessible, se fait depuis un chemin bien balisé, rendant cette randonnée adaptée à tous les niveaux, y compris les familles avec enfants. La fraîcheur de l’air et l’épaisseur des feuillages apportent une sérénité immédiate, un contraste saisissant avec l’agitation urbaine de la métropole lyonnaise. Le Bois de Serres étant relativement peu fréquenté, les amateurs de calme y trouveront leur compte, que ce soit pour une balade relaxante ou une immersion totale dans la nature.</p>
+          
+          <h3>Un parcours au cœur d’un écosystème préservé</h3>
+          <p>Ce qui rend le Bois de Serres si particulier, c’est son écosystème riche et varié. Tout au long du sentier, le randonneur traverse différents paysages : des forêts de feuillus, des clairières et des zones humides. En traversant ces différents milieux, on a l’occasion de découvrir une faune et une flore d’une grande diversité. Les ornithologues amateurs pourront observer de nombreuses espèces d’oiseaux, tandis que les passionnés de botanique apprécieront la variété des plantes présentes tout au long du chemin. Les arbres sont majestueux, certains ayant plusieurs dizaines d’années, et les sous-bois regorgent de fougères et d'autres végétaux typiques des milieux humides. À certaines périodes de l’année, notamment au printemps et en automne, le Bois de Serres se pare de magnifiques couleurs, avec des tapis de feuilles jaunes et orangées. Les ruisseaux qui traversent la forêt, comme celui du Serres, apportent une note de fraîcheur supplémentaire et sont particulièrement agréables à longer, apportant un son apaisant tout au long de la marche.</p>
+          
+          <h3>Un chemin accessible pour tous, avec des découvertes inattendues</h3>
+          <p>Le sentier de randonnée est relativement plat et bien entretenu, ce qui en fait une promenade idéale pour tous, que l’on soit débutant ou randonneur confirmé. Le parcours, qui forme une boucle d'environ 6 kilomètres, est jalonné de bancs en bois permettant de se reposer et d'admirer le paysage. Plusieurs points de vue permettent de profiter d'une vue dégagée sur les environs d'Écully et, par beau temps, sur les monts du Lyonnais à l’horizon. Ce parcours offre également quelques découvertes inattendues, notamment des vestiges de l’ancienne abbaye qui autrefois occupait les lieux, ajoutant ainsi une touche culturelle à cette randonnée nature. De plus, certaines parties du sentier longent des prairies où pâturent souvent des chevaux, ce qui ravira les plus jeunes marcheurs. Au fil du parcours, il n’est pas rare de croiser des familles venues pour un pique-nique en pleine nature ou des groupes de randonneurs plus expérimentés appréciant la quiétude des lieux.</p>
+          
+          <h3>Le retour vers Écully et des activités annexes</h3>
+          <p>Le retour vers le point de départ se fait en douceur, toujours dans le cadre enchanteur du Bois de Serres. La dernière partie de la randonnée offre de nouvelles perspectives, avec des sentiers plus dégagés et des zones en bordure de forêt, laissant apercevoir le village d’Écully au loin. Après avoir terminé la boucle, les randonneurs peuvent profiter des infrastructures du parc de l'Abbaye, avec des aires de jeux pour enfants et des espaces dédiés au repos. Le village d’Écully, situé à quelques minutes à pied, offre plusieurs options pour prolonger la journée : les amateurs de culture pourront visiter la chapelle de l’ancienne abbaye ou flâner dans les rues du centre historique d’Écully. Pour ceux qui souhaitent se restaurer, le village propose également de nombreuses terrasses et cafés où il est agréable de s’attarder pour boire un verre ou déguster une pâtisserie après une matinée de marche. En été, il n’est pas rare de voir des événements culturels se tenir dans les parcs environnants, ajoutant ainsi une dimension supplémentaire à cette belle escapade en plein air.</p>`,
+            duration: 2,
+            difficulty: "Facile",
+            distance: "8 km de Lyon",
+            location: "Parc de l’Abbaye, Rue du Bois de Serres, 69130 Écully"
+        }, {
+            title: "Randonnée à la Madone de Fontaines-Saint-Martin",
+            description: "Cette randonnée pittoresque vous conduit au sommet de la Madone de Fontaines-Saint-Martin, offrant une vue panoramique exceptionnelle sur les environs de Lyon et un cheminement à travers des paysages naturels variés.",
+            image: "img/escapades/escapade2.webp",
+            image_inside: "img/escapades/escapades_inside/escapade_inside2.webp",
+            content: `<h3>Départ depuis le cœur du village de Fontaines-Saint-Martin</h3>
+          <p>Située à une dizaine de kilomètres au nord de Lyon, la commune de Fontaines-Saint-Martin est le point de départ idéal pour une randonnée qui allie nature, patrimoine et paysages remarquables. Le départ de la balade se fait depuis le centre du village, facilement accessible et doté de quelques parkings pour les randonneurs. En quittant les ruelles charmantes du village, vous emprunterez un sentier qui serpente entre les maisons avant de rapidement plonger dans la nature environnante. Dès les premiers mètres, l’atmosphère se fait plus calme et apaisante, les bruits de la ville laissant place au chant des oiseaux et au bruissement des feuilles. Le début de la randonnée est plutôt tranquille, idéal pour se chauffer avant d’aborder les premières montées qui conduisent vers les hauteurs de la Madone.</p>
+          
+          <h3>Une montée progressive et des paysages variés</h3>
+          <p>Le chemin commence à s'élever doucement à mesure que vous vous éloignez du village. Très vite, les habitations laissent place à des zones plus naturelles, mêlant champs et forêts. Le sentier, bien balisé, traverse d’abord des prairies avant de pénétrer dans une belle forêt de feuillus. Selon la saison, cette montée peut offrir des panoramas changeants : au printemps, les sous-bois se couvrent de fleurs sauvages tandis que l’automne pare les arbres de magnifiques teintes dorées. Le sentier en lacets permet de gravir progressivement les pentes sans trop de difficultés, ce qui rend cette randonnée accessible même pour les marcheurs débutants ou les familles. Tout au long de la montée, des bancs et des espaces de repos permettent de s’arrêter pour reprendre son souffle et profiter du calme ambiant. En chemin, il n’est pas rare d’apercevoir des chevreuils ou des écureuils qui peuplent cette zone encore sauvage, pour le plus grand plaisir des amoureux de la nature.</p>
+          
+          <h3>Un panorama exceptionnel depuis la Madone</h3>
+          <p>Arrivé au sommet, la Madone de Fontaines-Saint-Martin vous récompense avec une vue imprenable sur les environs. Cette statue, qui veille sur le village depuis son piédestal, est un lieu de pèlerinage depuis des siècles, et sa position en hauteur en fait un point de vue privilégié. Depuis ce promontoire naturel, vous aurez une vue dégagée sur toute la vallée de la Saône, les Monts d'Or et, par temps clair, vous pourrez même apercevoir les sommets du Massif Central à l’horizon. Le panorama vaut vraiment le détour et invite à la contemplation. C’est aussi l’endroit parfait pour une pause déjeuner ou un pique-nique en pleine nature, avec des tables aménagées à cet effet. La sérénité du lieu, combinée à la beauté du paysage, en fait un endroit prisé pour se ressourcer loin de l’agitation quotidienne.</p>
+          
+          <h3>Retour par les chemins des crêtes et exploration du village</h3>
+          <p>Le chemin de retour vous fait emprunter une agréable descente qui suit les crêtes et permet de profiter encore un peu des superbes vues sur les environs. Ce sentier, plus dégagé, offre une perspective différente de la montée, avec des points de vue qui se dévoilent progressivement entre les arbres. La descente est douce et accessible, même pour les plus jeunes marcheurs. De retour dans le village, il est intéressant de prendre le temps de découvrir Fontaines-Saint-Martin, un charmant village qui a su conserver un esprit authentique avec ses vieilles pierres et ses petites places ombragées. Vous pourrez y découvrir l’église Saint-Martin, un bâtiment historique, ou simplement flâner dans les ruelles typiques de ce village du nord de Lyon. Après l’effort, rien de tel qu’un rafraîchissement en terrasse pour clôturer cette belle randonnée.</p>`,
+            duration: 2,
+            difficulty: "Moyen",
+            distance: "10 km de Lyon",
+            location: "Place de la Mairie, Fontaines-Saint-Martin, 69270"
+        }, {
+            title: "Le Sentier des Vignes, Ampuis",
+            description: "Une randonnée au cœur du vignoble d’Ampuis, traversant des collines couvertes de vignes, avec une vue imprenable sur le Rhône et les célèbres coteaux de l’appellation Côte-Rôtie.",
+            image: "img/escapades/escapade3.webp",
+            image_inside: "img/escapades/escapades_inside/escapade_inside3.webp",
+            content: `<h3>Départ au cœur des vignes d’Ampuis</h3>
+          <p>Le Sentier des Vignes commence dans la commune d’Ampuis, un village viticole réputé, situé à environ 40 kilomètres au sud de Lyon. Point de départ de cette randonnée, la place de l’Église d’Ampuis est le lieu idéal pour commencer l’exploration des célèbres vignobles de la région. Après avoir stationné dans les rues du village, vous prenez rapidement de l'altitude en suivant un chemin qui serpente à travers les vignes. Dès les premiers pas, le cadre est enchanteur, avec les rangées de vignes parfaitement alignées sur les coteaux, typiques de l’appellation Côte-Rôtie. Les amateurs de vin seront ravis de pouvoir découvrir les vignes de cépages Syrah et Viognier, emblématiques de cette région, en plein cœur des terres qui produisent certains des meilleurs vins de la vallée du Rhône.</p>
+          
+          <h3>Une ascension entre vignes et panoramas</h3>
+          <p>La première partie de la randonnée consiste en une montée progressive à travers les terrasses escarpées du vignoble. Le sentier est relativement bien marqué, et malgré la pente, il reste accessible à la plupart des marcheurs, même débutants. À mesure que vous vous élevez, les vignes laissent progressivement place à des points de vue spectaculaires sur la vallée du Rhône et les villages alentours. La vue est à couper le souffle, avec le fleuve majestueux qui serpente au pied des collines et les vignobles en terrasses qui s’étendent à perte de vue. Les points de repos disséminés tout au long du parcours permettent d’admirer ces panoramas exceptionnels et de reprendre son souffle avant de poursuivre l’ascension. En été, les raisins en pleine maturation donnent un spectacle coloré, tandis que l'automne, avec ses feuilles rougies et dorées, offre un décor tout aussi saisissant.</p>
+          
+          <h3>Découverte des coteaux de Côte-Rôtie</h3>
+          <p>Le point fort de cette randonnée est la traversée des coteaux de Côte-Rôtie, célèbres dans le monde entier pour leurs vins. Ces vignobles en terrasses sont parmi les plus anciens de France, plantés à flanc de colline sur des pentes parfois très raides. En marchant au milieu de ces parcelles, vous êtes directement en contact avec un savoir-faire viticole millénaire. Les chemins qui serpentent à travers les vignes permettent de découvrir de près le travail des vignerons, avec leurs murets de pierres sèches et leurs petites cabanes de vigne en pierre, appelées « cabottes ». Certaines portions du sentier sont également bordées de petits panneaux explicatifs, permettant aux randonneurs de mieux comprendre les particularités du terroir, des cépages et des techniques de culture utilisées pour produire ces vins d'exception. À mi-parcours, vous pourrez apercevoir les majestueux côteaux de Condrieu de l’autre côté du Rhône, qui produisent le fameux vin blanc du même nom.</p>
+          
+          <h3>Retour vers Ampuis et dégustation</h3>
+          <p>La descente se fait de manière douce, à travers les vignes qui redescendent vers Ampuis. Ce dernier tronçon permet de profiter encore des paysages bucoliques des vignobles en terrasses, avec la lumière de la fin de journée offrant des jeux d'ombre et de lumière sur les coteaux. De retour dans le village, une pause s'impose dans l'une des nombreuses caves de la région. Plusieurs domaines proposent en effet des dégustations de Côte-Rôtie, l'occasion parfaite pour découvrir les saveurs subtiles et complexes des vins locaux après une belle randonnée. La plupart des caves du village accueillent les randonneurs avec des visites guidées, permettant de mieux comprendre le travail de la vigne et les processus de vinification. Ampuis étant au cœur de l’appellation, vous êtes assuré de goûter à des cuvées renommées, directement produites sur les parcelles que vous venez de traverser. Un moment de détente bien mérité avant de repartir vers Lyon ou de continuer la découverte des vignobles environnants.</p>`,
+            duration: 3,
+            difficulty: "Moyen",
+            distance: "40 km de Lyon",
+            location: "Place de l’Église, Ampuis, 69420"
+        }, {
+            title: "Le Col du Planil, Chavanol dans le Pilat",
+            description: "Une randonnée nature dans le massif du Pilat, offrant une ascension progressive vers le Col du Planil, avec des panoramas spectaculaires sur les monts environnants.",
+            image: "img/escapades/escapade4.webp",
+            image_inside: "img/escapades/escapades_inside/escapade_inside4.webp",
+            content: `<h3>Départ depuis Chavanol, au cœur du Pilat</h3>
+          <p>Cette randonnée débute à Chavanol, un petit hameau situé dans le Parc naturel régional du Pilat, à environ 45 kilomètres de Lyon. Ce village constitue un point de départ idéal pour les amoureux de la nature qui souhaitent s'éloigner de la ville et découvrir les paysages préservés du massif. Le chemin qui mène au Col du Planil traverse d’abord une campagne verdoyante, parsemée de prairies et de petits bois. Le début de la randonnée est relativement doux, parfait pour s’échauffer en admirant les collines du Pilat qui se dessinent au loin. La flore du Pilat est particulièrement riche et variée, alternant entre châtaigniers, sapins et hêtres selon l’altitude, offrant ainsi un cadre idyllique tout au long de l’ascension.</p>
+          
+          <h3>Une ascension progressive à travers forêts et pâturages</h3>
+          <p>À mesure que vous progressez vers le Col du Planil, la pente s’accentue légèrement, mais reste tout à fait accessible pour les randonneurs de niveau intermédiaire. Le sentier, bien balisé, serpente à travers des forêts de conifères, où la fraîcheur et l’ombre offrent un répit lors des journées ensoleillées. La nature est omniprésente, avec des écureuils qui se faufilent entre les arbres et une multitude d’oiseaux que l’on peut entendre tout au long du parcours. À mi-parcours, le chemin débouche sur des pâturages ouverts où paissent souvent des troupeaux de vaches, typiques de cette région montagnarde. Ce tronçon offre également des vues dégagées sur les monts du Pilat, ainsi que sur la vallée du Rhône lorsque le ciel est dégagé, créant un panorama apaisant, propice à la détente et à la contemplation.</p>
+          
+          <h3>Arrivée au Col du Planil et ses panoramas</h3>
+          <p>Une fois arrivé au Col du Planil, à environ 1200 mètres d’altitude, vous serez récompensé par une vue imprenable sur les montagnes environnantes. Le col marque une intersection de plusieurs sentiers, offrant ainsi de nombreuses possibilités de prolonger la randonnée pour les plus aventureux. Pour ceux qui souhaitent s'arrêter ici, un petit pique-nique s'impose pour profiter de la quiétude du lieu et des paysages majestueux. La descente vers Chavanol peut s’effectuer par le même chemin ou via un itinéraire alternatif qui serpente le long de la crête, permettant d’admirer de nouveaux points de vue. Tout au long de cette randonnée, la tranquillité des lieux et la beauté sauvage des paysages offrent une parenthèse bienvenue, loin de l’agitation urbaine.</p>`,
+            duration: 4,
+            difficulty: "Moyen",
+            distance: "45 km de Lyon",
+            location: "Chavanol, 42410 Pélussin"
+        }, {
+            title: "Boucle dans les Monts d’Or depuis Saint-Germain (via le Mont Py)",
+            description: "Un circuit pittoresque dans les Monts d’Or, offrant une belle ascension vers le Mont Py et des vues dégagées sur la région lyonnaise.",
+            image: "img/escapades/escapade5.webp",
+            image_inside: "img/escapades/escapades_inside/escapade_inside5.webp",
+            content: `<h3>Départ depuis le village de Saint-Germain-au-Mont-d’Or</h3>
+          <p>La boucle commence dans le charmant village de Saint-Germain-au-Mont-d'Or, à environ 20 kilomètres de Lyon. C’est un excellent point de départ pour les randonneurs qui souhaitent découvrir les reliefs et paysages variés des Monts d'Or. Après avoir garé votre voiture à proximité de la mairie ou de l'église, vous empruntez un sentier qui s’enfonce dans la verdure. Dès les premiers mètres, vous êtes plongé dans une ambiance champêtre, où se mêlent champs, forêts et petits ruisseaux. Le chemin, en montée progressive, vous amène rapidement sur les hauteurs du village, où la vue commence à se dégager, laissant apparaître les premiers panoramas sur la vallée de la Saône et la région lyonnaise. C’est une entrée en matière tout en douceur, idéale pour se mettre en jambes avant l'ascension du Mont Py.</p>
+          
+          <h3>L’ascension du Mont Py</h3>
+          <p>Le Mont Py, point culminant de cette boucle, est la principale attraction de la randonnée. Après une marche agréable à travers bois et prairies, vous atteignez les premières pentes du mont. Bien que l’ascension soit un peu plus soutenue, elle reste accessible à tous les marcheurs, même les moins expérimentés. Le sentier serpente à travers une forêt de chênes et de hêtres, offrant ombre et fraîcheur, particulièrement appréciable en été. À mesure que vous gagnez en altitude, la végétation se fait plus clairsemée, offrant de superbes vues sur les Monts du Lyonnais à l’horizon et, par temps clair, sur la chaîne des Alpes. Arrivé au sommet, à environ 620 mètres d’altitude, vous profiterez d’un panorama à 360 degrés sur toute la région. C’est le moment parfait pour faire une pause, reprendre des forces, et admirer les paysages vallonnés des Monts d'Or et des plaines environnantes. De petits bancs en pierre invitent à la détente avant de repartir sur le sentier.</p>
+          
+          <h3>Retour en boucle par les chemins forestiers</h3>
+          <p>La descente du Mont Py se fait par un autre chemin, formant ainsi une boucle qui vous ramène tranquillement vers Saint-Germain. Le sentier traverse des forêts denses et descend en pente douce, idéal pour une marche apaisante après l’effort de l’ascension. Sur le retour, vous passerez par plusieurs petits hameaux typiques des Monts d’Or, avec leurs maisons en pierres dorées, caractéristiques de la région. Le parcours offre également des points de vue ponctuels sur la Saône et la plaine de l’Ain au loin. Ce tronçon est plus tranquille, avec moins de dénivelé, parfait pour profiter de la nature et de la quiétude des lieux. Après environ 3 heures de marche, vous arrivez de nouveau à Saint-Germain-au-Mont-d'Or, où vous pourrez profiter des petits cafés ou restaurants pour une pause bien méritée. </p>`,
+            duration: 3,
+            difficulty: "Moyen",
+            distance: "20 km de Lyon",
+            location: "Saint-Germain-au-Mont-d’Or, 69650"
+        }, {
+            title: "Circuit en boucle depuis le Col du Châtoux dans le Haut Beaujolais",
+            description: "Une randonnée offrant une immersion totale dans les paysages vallonnés du Haut Beaujolais, avec des forêts, des pâturages et des panoramas exceptionnels.",
+            image: "img/escapades/escapade6.webp",
+            image_inside: "img/escapades/escapades_inside/escapade_inside6.webp",
+            content: `<h3>Départ depuis le Col du Châtoux</h3>
+          <p>Le circuit débute au Col du Châtoux, un lieu paisible situé à environ 50 kilomètres de Lyon, dans le Haut Beaujolais. Ce col est un point de départ idéal pour explorer cette région moins fréquentée mais tout aussi charmante du Beaujolais, loin des sentiers battus des célèbres vignobles. Dès le départ, vous serez plongé dans une atmosphère tranquille, entouré de forêts et de pâturages verdoyants. Le sentier commence en douceur par une montée progressive à travers une forêt de conifères, caractéristique de cette région montagneuse. Les premières minutes de la marche sont propices à l’observation de la faune locale, avec des écureuils, des chevreuils et une grande variété d'oiseaux que l’on peut croiser en chemin. L’air frais et pur des monts environnants procure une sensation immédiate de déconnexion et de détente.</p>
+          
+          <h3>Traversée des crêtes et vues panoramiques</h3>
+          <p>Après une première montée modérée, le sentier vous amène sur les crêtes du Haut Beaujolais, offrant de superbes vues dégagées sur les vallées et collines environnantes. Par temps clair, vous pourrez apercevoir les Alpes à l’horizon, ainsi que les monts du Lyonnais au loin. Ce tronçon est particulièrement agréable, avec ses paysages variés : des pâturages où paissent des troupeaux de vaches, des clairières fleuries, et des forêts de sapins. Le calme des lieux est particulièrement appréciable pour ceux en quête de nature et de solitude. Sur ces hauteurs, le chemin est bien balisé et offre des points de repos avec des bancs ou des rochers d’où il est possible d’admirer le panorama et de faire une pause. Ce moment est idéal pour savourer un encas tout en profitant des paysages ouverts, sous un ciel souvent dégagé.</p>
+          
+          <h3>Retour en boucle par les vallons et les hameaux</h3>
+          <p>La descente se fait en douceur à travers des vallons boisés, avec quelques portions de chemin ombragées parfaites pour les journées d’été. En redescendant vers le Col du Châtoux, le paysage change légèrement, devenant plus rural avec de petits hameaux typiques du Haut Beaujolais, où le temps semble s’être arrêté. Ces petits villages, souvent composés de quelques fermes et maisons en pierre, témoignent de la vie traditionnelle et agricole de cette région. Le chemin, toujours bien balisé, est accessible et agréable, avec quelques petits cours d'eau qui serpentent dans les vallées, ajoutant une touche rafraîchissante au parcours. De retour au Col du Châtoux, après environ 4 heures de marche, vous aurez pleinement profité de l’authenticité et de la beauté naturelle du Haut Beaujolais, loin de l’agitation touristique des vignobles du sud.</p>`,
+            duration: 4,
+            difficulty: "Moyen",
+            distance: "50 km de Lyon",
+            location: "Col du Châtoux, 69870 Poule-les-Écharmeaux"
+        }, {
+            title: "Le Mont Thou",
+            description: "Une randonnée rapide mais intense sur l’un des sommets les plus emblématiques des Monts d’Or, offrant des vues imprenables sur Lyon et les alentours.",
+            image: "img/escapades/escapade7.webp",
+            image_inside: "img/escapades/escapades_inside/escapade_inside7.webp",
+            content: `<h3>Départ depuis Saint-Romain-au-Mont-d’Or</h3>
+          <p>Le Mont Thou, situé dans les Monts d'Or, est une randonnée incontournable pour ceux qui souhaitent s'évader rapidement de Lyon tout en profitant de superbes panoramas. Le départ s'effectue depuis le charmant village de Saint-Romain-au-Mont-d’Or, à environ 10 km de Lyon. Ce village pittoresque, avec ses maisons en pierres dorées typiques de la région, donne immédiatement le ton : ici, la nature et l’histoire se côtoient harmonieusement. Dès le début du sentier, la montée est assez soutenue, traversant des rues étroites et des chemins pavés avant de s’enfoncer dans une forêt de chênes et de hêtres. Ce premier tronçon, ombragé et paisible, offre une ascension régulière idéale pour s’échauffer tout en admirant les premières vues sur la Saône.</p>
+          
+          <h3>L’ascension du Mont Thou</h3>
+          <p>Le Mont Thou culmine à environ 609 mètres, ce qui en fait l'un des sommets les plus imposants des Monts d'Or. Après avoir quitté les parties boisées, la pente s’accentue nettement. Le sentier devient alors plus rocailleux, serpentant à travers des zones dégagées et offrant des points de vue imprenables sur Lyon. À mi-parcours, vous aurez l’occasion de vous arrêter à des belvédères naturels, d’où la vue sur la vallée du Rhône, les Alpes au loin, et même le Mont Blanc par temps clair, est tout simplement époustouflante. La végétation se fait plus rare au fur et à mesure que vous vous rapprochez du sommet, avec de petites prairies et des landes qui dominent le paysage. Cette partie est plus exigeante physiquement, mais la beauté du cadre en vaut largement l’effort. </p>
+          
+          <h3>Sommet et descente</h3>
+          <p>Une fois au sommet du Mont Thou, vous serez récompensé par une vue panoramique à 360 degrés sur la région. D’un côté, les Monts du Lyonnais et, de l’autre, Lyon qui s'étend en contrebas. Le spectacle est encore plus impressionnant en fin de journée, lorsque le soleil couchant éclaire les toits de la ville d'une lumière dorée. Après avoir profité de ce moment de contemplation, il est temps de redescendre. Le retour peut se faire par le même chemin, ou en optant pour un sentier alternatif qui contourne le mont par des chemins forestiers plus doux. Cette descente est agréable, offrant de nouveaux points de vue sur la vallée de la Saône et les petits villages des Monts d'Or. Après environ 2 heures de marche, vous regagnerez Saint-Romain-au-Mont-d’Or, avec le sentiment d’avoir découvert l’un des plus beaux points de vue de la région lyonnaise.</p>`,
+            duration: 2,
+            difficulty: "Moyen",
+            distance: "10 km de Lyon",
+            location: "Saint-Romain-au-Mont-d'Or, 69270"
+        }, {
+            title: "Le Mont Luisandre et les 4 châteaux",
+            description: "Une randonnée fascinante alliant nature et patrimoine, avec des vues panoramiques sur les paysages environnants et la découverte de quatre châteaux historiques.",
+            image: "img/escapades/escapade8.webp",
+            image_inside: "img/escapades/escapades_inside/escapade_inside8.webp",
+            content: `<h3>Départ depuis le village de Chazay-d'Azergues</h3>
+          <p>Le circuit commence au charmant village de Chazay-d'Azergues, situé à environ 30 kilomètres de Lyon. Ce village médiéval, avec ses ruelles pavées et ses maisons en pierres, constitue un point de départ idéal pour une journée de randonnée riche en découvertes. À partir de Chazay, le sentier vous mène rapidement à travers des champs et des forêts, offrant un premier aperçu des magnifiques paysages du Beaujolais. La première partie de la randonnée est relativement facile, avec une montée progressive qui permet de s’échauffer en douceur. Au fur et à mesure que vous avancez, le chemin serpente entre les vignes et les bosquets, offrant des vues sur la campagne environnante et les collines qui se dessinent à l'horizon. Les amateurs de photographie apprécieront les nombreux points de vue qui jalonneront votre parcours.</p>
+          
+          <h3>Ascension du Mont Luisandre</h3>
+          <p>Après environ 1 heure de marche, vous commencerez l'ascension du Mont Luisandre, qui culmine à 600 mètres d'altitude. Cette partie du chemin devient plus escarpée et rocky, mais elle est accessible aux randonneurs de niveau intermédiaire. Une fois au sommet, vous serez récompensé par un panorama exceptionnel sur le Beaujolais et la plaine du Rhône. Par temps clair, vous pourrez même apercevoir les Alpes au loin. Le Mont Luisandre est également connu pour sa faune variée, et il n'est pas rare d’apercevoir des rapaces planant au-dessus des collines. Prenez le temps d'admirer le paysage et de faire une pause avant de poursuivre votre randonnée vers les châteaux.</p>
+          
+          <h3>Découverte des 4 châteaux</h3>
+          <p>Le circuit vous mène ensuite à la découverte de quatre châteaux historiques : le Château de Chazay, le Château de Vaux, le Château de Saint-Laurent-d'Agny et le Château de Montmelas. Chacun de ces châteaux a son propre caractère et son histoire, et vous pourrez admirer leur architecture et leurs jardins. La randonnée offre des tronçons à travers des chemins forestiers et des petits sentiers qui relient ces châteaux, chacun vous plongeant dans l'histoire locale et les légendes qui les entourent. Le temps d’une pause pique-nique près de l’un des châteaux est idéal pour savourer un moment de détente avant de reprendre le chemin du retour. Le parcours est riche en histoire et en culture, faisant de cette randonnée une expérience complète qui allie plaisir de la marche et enrichissement personnel.</p>
+          
+          <h3>Retour vers Chazay-d'Azergues</h3>
+          <p>Le retour vers Chazay-d'Azergues se fait par un chemin de randonnée balisé, offrant de nouveaux points de vue sur la région. Le sentier redescend en douceur, avec quelques zones ombragées parfaites pour se rafraîchir pendant les chaudes journées d'été. À mesure que vous approchez de Chazay, le paysage change légèrement, se transformant en vignobles et champs cultivés. Vous arriverez à votre point de départ après environ 4 heures de marche, des souvenirs plein la tête et peut-être même une bouteille de vin local à ramener, pour prolonger l’expérience du Beaujolais chez vous.</p>`,
+            duration: 4,
+            difficulty: "Moyen",
+            distance: "30 km de Lyon",
+            location: "Chazay-d'Azergues, 69380"
+        }, {
+            title: "La Roche Percée et le point de vue de Romagneux",
+            description: "Une randonnée pittoresque qui vous mène à La Roche Percée, offrant des vues imprenables sur les paysages environnants.",
+            image: "img/escapades/escapade9.webp",
+            image_inside: "img/escapades/escapades_inside/escapade_inside9.webp",
+            content: `<h3>Départ depuis Chassagny</h3>
+          <p>La randonnée vers La Roche Percée commence au village de Chassagny, situé à environ 25 km au nord de Lyon. Ce village tranquille est le point de départ idéal pour explorer les magnifiques paysages du Beaujolais. Dès le départ, vous serez immergé dans la nature, avec des sentiers bien balisés qui serpentent à travers des prairies verdoyantes et des forêts. La première partie du parcours est relativement douce, permettant aux randonneurs de profiter de l'air frais et des senteurs de la campagne. En chemin, vous découvrirez des panoramas charmants sur la vallée, qui s'étendent jusqu'aux collines du Beaujolais. Les petits chemins et sentiers creux ajoutent au charme de cette randonnée, qui est accessible à tous.</p>
+          
+          <h3>La Roche Percée</h3>
+          <p>Après environ une heure de marche, vous atteindrez La Roche Percée, une formation rocheuse spectaculaire qui émerge de la forêt. Cette roche, avec son ouverture naturelle, est un lieu prisé par les randonneurs et les photographes. Vous pouvez grimper jusqu'au sommet pour avoir une vue panoramique à couper le souffle sur les vallées environnantes et les collines boisées. La Roche Percée est également un site idéal pour faire une pause, savourer un pique-nique et se ressourcer en pleine nature. Ce lieu unique a une ambiance apaisante, et vous pourrez entendre le chant des oiseaux et le murmure du vent à travers les arbres, créant une atmosphère de sérénité.</p>
+          
+          <h3>Le point de vue de Romagneux</h3>
+          <p>Après avoir exploré La Roche Percée, le sentier vous mènera au point de vue de Romagneux, qui se trouve à quelques minutes de marche. Ce point de vue offre une vue encore plus impressionnante sur les paysages du Beaujolais et les Monts d'Or. La vue s'étend sur des kilomètres, et par temps clair, vous pourrez apercevoir les sommets au loin. C'est l'endroit parfait pour prendre des photos mémorables et apprécier la beauté naturelle de la région. Le chemin de retour à Chassagny vous permettra de redécouvrir la beauté de la nature environnante et de terminer cette randonnée par une promenade relaxante. Environ 3 heures de marche sont nécessaires pour cette randonnée qui combine découverte, contemplation et nature.</p>`,
+            duration: 3,
+            difficulty: "Moyen",
+            distance: "25 km de Lyon",
+            location: "Chassagny, 69440"
+        }, {
+            title: "Le Grand Ratz",
+            description: "Une randonnée fascinante qui vous conduit au sommet du Grand Ratz, avec des vues à couper le souffle sur les montagnes environnantes.",
+            image: "img/escapades/escapade10.webp",
+            image_inside: "img/escapades/escapades_inside/escapade_inside10.webp",
+            content: `<h3>Départ depuis le village de Montagnieu</h3>
+          <p>La randonnée vers le Grand Ratz débute au charmant village de Montagnieu, situé à environ 30 km de Lyon. Cette randonnée est idéale pour ceux qui cherchent à s'éloigner de l'agitation urbaine et à se plonger dans la beauté naturelle de la région. Le départ se fait à partir de la place du village, où vous pourrez admirer les bâtiments historiques et profiter de l'ambiance paisible. Les premiers kilomètres du sentier sont agréables et accessibles, serpentant à travers des champs ouverts et des forêts, offrant ainsi un mélange de paysages variés. L'ascension commence lentement, mais rapidement, vous serez immergé dans la nature, entouré par le chant des oiseaux et le parfum des fleurs sauvages.</p>
+          
+          <h3>Ascension du Grand Ratz</h3>
+          <p>Au fur et à mesure que vous avancez, le sentier devient plus escarpé, mais les panoramas qui se dévoilent valent chaque effort. La montée, bien que modérée, vous permettra d’apprécier les paysages changeants des Monts du Lyonnais. En grimpant, vous pourrez apercevoir des vues impressionnantes sur la vallée de l'Ain et les massifs environnants. La randonnée est ponctuée de plusieurs points de vue, où il est agréable de faire une pause pour se reposer et capturer des images mémorables. Après environ deux heures de marche, vous atteindrez le sommet du Grand Ratz, où vous serez récompensé par une vue panoramique à couper le souffle. Le sommet est un lieu parfait pour se restaurer, faire un pique-nique et profiter de la tranquillité des lieux.</p>
+          
+          <h3>Retour et découverte</h3>
+          <p>Le chemin du retour vous permettra de découvrir des sentiers différents, ajoutant à l'expérience globale de la randonnée. Vous aurez l'occasion de passer par des prairies fleuries et des forêts denses, tout en savourant la beauté tranquille des paysages. La randonnée au Grand Ratz est un excellent moyen de se reconnecter à la nature et de profiter de l'air frais. Cette expérience est accessible aux randonneurs d'un niveau moyen et nécessite environ 4 heures pour l'aller-retour. Ne manquez pas cette randonnée mémorable, où nature et panoramas se rencontrent dans un cadre idyllique.</p>`,
+            duration: 4,
+            difficulty: "Difficile",
+            distance: "30 km de Lyon",
+            location: "Montagnieu, 38110"
+        }])
 }
 catch (error) {
     console.log(error)

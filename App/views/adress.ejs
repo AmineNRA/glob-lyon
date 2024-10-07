@@ -15,49 +15,25 @@
             <li>Bien-être/Santé</li>
         </ul>
         <div class="container">
-            <article class="article">
-                <img class="article__img" src="/img/restauration.png" alt="">
-                <div class="article__info">
-                    <span>Restauration</span>
-                    <div class="article__info--desc">
-                        <h3>Nom activité</h3>
-                        <p>Description d'activité courte de 2 lignes</p>
+            <% for( const article of articles ) { %>
+                <article class="article">
+                    <a href="/article/<%=article.id%>"><img class="article__img" src="<%= article.image %>" alt=""></a>
+                    <div class="article__info">
+                        <span><%=article.Tag.label%></span>
+                        <div class="article__info--desc">
+                                <h3>
+                                    <a href="/article/<%=article.id%>">
+                                    <%= article.title %>
+                                    </a>
+                                </h3>
+                            <p class="text">
+                                <%= article.description %>
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </article>
-            <article class="article">
-                <img class="article__img" src="/img/clubs.jpg" alt="">
-                <div class="article__info">
-                    <span>Bars/Clubs</span>
-                    <div class="article__info--desc">
-                        <h3>Nom activité</h3>
-                        <p>Description d'activité courte de 2 lignes</p>
-                    </div>
-                </div>
-            </article>
-            <article class="article">
-                <img class="article__img" src="/img/hotel.jpg" alt="">
-                <div class="article__info">
-                    <span>Hébergement</span>
-                    <div class="article__info--desc">
-                        <h3>Nom activité</h3>
-                        <p>Description d'activité courte de 2 lignes</p>
-                    </div>
-                </div>
-            </article>
-            <article class="article">
-                <img class="article__img" src="/img/hotel.jpg" alt="">
-                <div class="article__info">
-                    <span>Bien-être/Santé</span>
-                    <div class="article__info--desc">
-                        <h3>Nom activité</h3>
-                        <p>Description d'activité courte de 2 lignes</p>
-                    </div>
-                </div>
-            </article>
+                </article>
+            <% } %>
         </div>
-
-
     </main>
 
     <%- include('partials/footer') %>

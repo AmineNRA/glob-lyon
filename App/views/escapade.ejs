@@ -34,85 +34,20 @@
         </ul>
 
         <div class="container">
-
-            <article class="article" data-difficulty='Facile' data-duration="1h" data-distance="2">
-                <div class="article__img">
-                    <img class="article__img--img" src="/img/escapade.png" alt="">
-                    <div class="article__img--filterOne">1h</div>
-                    <div class="article__img--filterTwo"><span>2</span>km</div>
-                    <div class="article__img--filterThree"></div>
-                </div>
-                <div class="article__info">
-                    <h3>Nom activité</h3>
-                    <p>Description d'acitivité courte de 2 lignes max</p>
-                </div>
-            </article>
-
-            <article class="article" data-difficulty='Facile' data-duration="1h" data-distance="10">
-                <div class="article__img">
-                    <img class="article__img--img" src="/img/escapade.png" alt="">
-                    <div class="article__img--filterOne">1h</div>
-                    <div class="article__img--filterTwo"><span>10</span>km</div>
-                    <div class="article__img--filterThree"></span></div>
-                </div>
-                <div class="article__info">
-                    <h3>Nom activité</h3>
-                    <p>Description d'acitivité courte de 2 lignes max</p>
-                </div>
-            </article>
-
-            <article class="article" data-difficulty='Facile' data-duration="2h" data-distance="8">
-                <div class="article__img">
-                    <img class="article__img--img" src="/img/escapade.png" alt="">
-                    <div class="article__img--filterOne">2h</div>
-                    <div class="article__img--filterTwo"><span>8</span>km</div>
-                    <div class="article__img--filterThree"></span></div>
-                </div>
-                <div class="article__info">
-                    <h3>Nom activité</h3>
-                    <p>Description d'acitivité courte de 2 lignes max</p>
-                </div>
-            </article>
-
-            <article class="article" data-difficulty='Difficile' data-duration="1h" data-distance="5">
-                <div class="article__img">
-                    <img class="article__img--img" src="/img/escapade.png" alt="">
-                    <div class="article__img--filterOne">1h</div>
-                    <div class="article__img--filterTwo"><span>5</span>km</div>
-                    <div class="article__img--filterThree"></div>
-                </div>
-                <div class="article__info">
-                    <h3>Nom activité</h3>
-                    <p>Description d'acitivité courte de 2 lignes max</p>
-                </div>
-            </article>
-
-            <article class="article" data-difficulty='Facile' data-duration="2h" data-distance="12">
-                <div class="article__img">
-                    <img class="article__img--img" src="/img/escapade.png" alt="">
-                    <div class="article__img--filterOne">2h</div>
-                    <div class="article__img--filterTwo"><span>12</span>km</div>
-                    <div class="article__img--filterThree"></div>
-                </div>
-                <div class="article__info">
-                    <h3>Nom activité</h3>
-                    <p>Description d'acitivité courte de 2 lignes max</p>
-                </div>
-            </article>
-
-            <article class="article" data-difficulty='Moyen' data-duration="3h" data-distance="15">
-                <div class="article__img">
-                    <img class="article__img--img" src="/img/escapade.png" alt="">
-                    <div class="article__img--filterOne">3h</div>
-                    <div class="article__img--filterTwo"><span>15</span>km</div>
-                    <div class="article__img--filterThree"></div>
-                </div>
-                <div class="article__info">
-                    <h3>Nom activité</h3>
-                    <p>Description d'acitivité courte de 2 lignes max</p>
-                </div>
-            </article>
-
+            <% for( let escapade of escapades ) { %>
+                <article class="article" data-difficulty='<%=escapade.difficulty%>' data-duration="<%=escapade.duration%>h" data-distance="<%=escapade.distance.slice(0,2)%>">
+                    <div class="article__img">
+                        <img class="article__img--img" src="<%=escapade.image%>" alt="">
+                        <div class="article__img--filterOne"><%=escapade.duration%>h</div>
+                        <div class="article__img--filterTwo"><span><%=escapade.distance.slice(0,2)%></span>km</div>
+                        <div class="article__img--filterThree"><%=escapade.difficulty%></div>
+                    </div>
+                    <div class="article__info">
+                        <h3><%=escapade.title%></h3>
+                        <p><%=escapade.description%></p>
+                    </div>
+                </article>
+            <% } %>
         </div>
     </main>
 

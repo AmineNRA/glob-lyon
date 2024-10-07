@@ -6,6 +6,41 @@ import Tag from './tag.js';
 class Escapade extends Model { };
 
 Escapade.init({
+    title: {
+        type: DataTypes.TEXT,
+        allowNull: false,
+        validate: {
+            notEmpty: true,
+        }
+    },
+    description: {
+        type: DataTypes.TEXT,
+        allowNull: false,
+        validate: {
+            notEmpty: true,
+        }
+    },
+    content: {
+        type: DataTypes.TEXT,
+        allowNull: false,
+        validate: {
+            notEmpty: true,
+        }
+    },
+    image: {
+        type: DataTypes.TEXT,
+        allowNull: false,
+        validate: {
+            notEmpty: true,
+        }
+    },
+    image_inside: {
+        type: DataTypes.TEXT,
+        allowNull: false,
+        validate: {
+            notEmpty: true,
+        }
+    },
     duration: {
         type: DataTypes.INTEGER,
         allowNull: false,
@@ -14,14 +49,14 @@ Escapade.init({
         }
     },
     difficulty: {
-        type: DataTypes.ENUM('facile', 'moyen', 'difficile'),
+        type: DataTypes.ENUM('Facile', 'Moyen', 'Difficile'),
         allowNull: false,
         validate: {
             notEmpty: true,
         }
     },
     distance: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.TEXT,
         allowNull: false,
         validate: {
             notEmpty: true,
@@ -43,8 +78,7 @@ Escapade.init({
         references: {
             model: User,
             key: 'id'
-        },
-        allowNull: false,
+        }
     }
 }, {
     sequelize,
