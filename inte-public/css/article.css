@@ -1,3 +1,9 @@
+body{
+    background-image: url(/img/background_img/article.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 h2{
     padding: 2rem 0;
     text-align: center;
