@@ -1,11 +1,11 @@
-import Article from "./app/models/article.js";
+import Article from "./App/models/article.js";
 import Caroussel from "./app/models/caroussel.js";
 import Comment from "./app/models/comment.js";
-import Escapade from "./app/models/escapade.js";
+import Escapade from "./App/models/escapade.js";
 import Message from "./app/models/message.js";
-import Tag from "./app/models/tag.js";
-import User from "./app/models/user.js";
-import sequelize from "./app/database.js";
+import Tag from "./App/models/tag.js";
+import User from "./App/models/user.js";
+import sequelize from "./App/database.js";
 
 
 try {
@@ -740,8 +740,8 @@ try {
         Escapade.bulkCreate([{
             title: "Randonnée au Bois de Serres, Écully",
             description: "Cette randonnée accessible dans le Bois de Serres à Écully offre un cadre naturel exceptionnel, parfait pour une sortie en pleine nature à proximité immédiate de Lyon. Un parcours à travers forêts, ruisseaux et paysages préservés.",
-            image: "img/escapades/escapade1.webp",
-            image_inside: "img/escapades/escapades_inside/escapade_inside1.webp",
+            image: "/img/escapades/escapade1.webp",
+            image_inside: "/img/escapades/escapades_inside/escapade_inside1.webp",
             content: `<h3>Départ et immersion immédiate dans la nature</h3>
           <p>Le Bois de Serres, situé à quelques kilomètres à l'ouest de Lyon, est l'un des trésors naturels d'Écully. Cette randonnée commence au parc de l'Abbaye, un lieu emblématique d'Écully où la nature se mêle à l'histoire locale. Dès les premiers pas, le randonneur est plongé dans un cadre boisé dense, caractérisé par la diversité des essences d'arbres. Le départ, facile et accessible, se fait depuis un chemin bien balisé, rendant cette randonnée adaptée à tous les niveaux, y compris les familles avec enfants. La fraîcheur de l’air et l’épaisseur des feuillages apportent une sérénité immédiate, un contraste saisissant avec l’agitation urbaine de la métropole lyonnaise. Le Bois de Serres étant relativement peu fréquenté, les amateurs de calme y trouveront leur compte, que ce soit pour une balade relaxante ou une immersion totale dans la nature.</p>
           
@@ -760,8 +760,8 @@ try {
         }, {
             title: "Randonnée à la Madone de Fontaines-Saint-Martin",
             description: "Cette randonnée pittoresque vous conduit au sommet de la Madone de Fontaines-Saint-Martin, offrant une vue panoramique exceptionnelle sur les environs de Lyon et un cheminement à travers des paysages naturels variés.",
-            image: "img/escapades/escapade2.webp",
-            image_inside: "img/escapades/escapades_inside/escapade_inside2.webp",
+            image: "/img/escapades/escapade2.webp",
+            image_inside: "/img/escapades/escapades_inside/escapade_inside2.webp",
             content: `<h3>Départ depuis le cœur du village de Fontaines-Saint-Martin</h3>
           <p>Située à une dizaine de kilomètres au nord de Lyon, la commune de Fontaines-Saint-Martin est le point de départ idéal pour une randonnée qui allie nature, patrimoine et paysages remarquables. Le départ de la balade se fait depuis le centre du village, facilement accessible et doté de quelques parkings pour les randonneurs. En quittant les ruelles charmantes du village, vous emprunterez un sentier qui serpente entre les maisons avant de rapidement plonger dans la nature environnante. Dès les premiers mètres, l’atmosphère se fait plus calme et apaisante, les bruits de la ville laissant place au chant des oiseaux et au bruissement des feuilles. Le début de la randonnée est plutôt tranquille, idéal pour se chauffer avant d’aborder les premières montées qui conduisent vers les hauteurs de la Madone.</p>
           
@@ -780,8 +780,8 @@ try {
         }, {
             title: "Le Sentier des Vignes, Ampuis",
             description: "Une randonnée au cœur du vignoble d’Ampuis, traversant des collines couvertes de vignes, avec une vue imprenable sur le Rhône et les célèbres coteaux de l’appellation Côte-Rôtie.",
-            image: "img/escapades/escapade3.webp",
-            image_inside: "img/escapades/escapades_inside/escapade_inside3.webp",
+            image: "/img/escapades/escapade3.webp",
+            image_inside: "/img/escapades/escapades_inside/escapade_inside3.webp",
             content: `<h3>Départ au cœur des vignes d’Ampuis</h3>
           <p>Le Sentier des Vignes commence dans la commune d’Ampuis, un village viticole réputé, situé à environ 40 kilomètres au sud de Lyon. Point de départ de cette randonnée, la place de l’Église d’Ampuis est le lieu idéal pour commencer l’exploration des célèbres vignobles de la région. Après avoir stationné dans les rues du village, vous prenez rapidement de l'altitude en suivant un chemin qui serpente à travers les vignes. Dès les premiers pas, le cadre est enchanteur, avec les rangées de vignes parfaitement alignées sur les coteaux, typiques de l’appellation Côte-Rôtie. Les amateurs de vin seront ravis de pouvoir découvrir les vignes de cépages Syrah et Viognier, emblématiques de cette région, en plein cœur des terres qui produisent certains des meilleurs vins de la vallée du Rhône.</p>
           
@@ -800,8 +800,8 @@ try {
         }, {
             title: "Le Col du Planil, Chavanol dans le Pilat",
             description: "Une randonnée nature dans le massif du Pilat, offrant une ascension progressive vers le Col du Planil, avec des panoramas spectaculaires sur les monts environnants.",
-            image: "img/escapades/escapade4.webp",
-            image_inside: "img/escapades/escapades_inside/escapade_inside4.webp",
+            image: "/img/escapades/escapade4.webp",
+            image_inside: "/img/escapades/escapades_inside/escapade_inside4.webp",
             content: `<h3>Départ depuis Chavanol, au cœur du Pilat</h3>
           <p>Cette randonnée débute à Chavanol, un petit hameau situé dans le Parc naturel régional du Pilat, à environ 45 kilomètres de Lyon. Ce village constitue un point de départ idéal pour les amoureux de la nature qui souhaitent s'éloigner de la ville et découvrir les paysages préservés du massif. Le chemin qui mène au Col du Planil traverse d’abord une campagne verdoyante, parsemée de prairies et de petits bois. Le début de la randonnée est relativement doux, parfait pour s’échauffer en admirant les collines du Pilat qui se dessinent au loin. La flore du Pilat est particulièrement riche et variée, alternant entre châtaigniers, sapins et hêtres selon l’altitude, offrant ainsi un cadre idyllique tout au long de l’ascension.</p>
           
@@ -817,8 +817,8 @@ try {
         }, {
             title: "Boucle dans les Monts d’Or depuis Saint-Germain (via le Mont Py)",
             description: "Un circuit pittoresque dans les Monts d’Or, offrant une belle ascension vers le Mont Py et des vues dégagées sur la région lyonnaise.",
-            image: "img/escapades/escapade5.webp",
-            image_inside: "img/escapades/escapades_inside/escapade_inside5.webp",
+            image: "/img/escapades/escapade5.webp",
+            image_inside: "/img/escapades/escapades_inside/escapade_inside5.webp",
             content: `<h3>Départ depuis le village de Saint-Germain-au-Mont-d’Or</h3>
           <p>La boucle commence dans le charmant village de Saint-Germain-au-Mont-d'Or, à environ 20 kilomètres de Lyon. C’est un excellent point de départ pour les randonneurs qui souhaitent découvrir les reliefs et paysages variés des Monts d'Or. Après avoir garé votre voiture à proximité de la mairie ou de l'église, vous empruntez un sentier qui s’enfonce dans la verdure. Dès les premiers mètres, vous êtes plongé dans une ambiance champêtre, où se mêlent champs, forêts et petits ruisseaux. Le chemin, en montée progressive, vous amène rapidement sur les hauteurs du village, où la vue commence à se dégager, laissant apparaître les premiers panoramas sur la vallée de la Saône et la région lyonnaise. C’est une entrée en matière tout en douceur, idéale pour se mettre en jambes avant l'ascension du Mont Py.</p>
           
@@ -834,8 +834,8 @@ try {
         }, {
             title: "Circuit en boucle depuis le Col du Châtoux dans le Haut Beaujolais",
             description: "Une randonnée offrant une immersion totale dans les paysages vallonnés du Haut Beaujolais, avec des forêts, des pâturages et des panoramas exceptionnels.",
-            image: "img/escapades/escapade6.webp",
-            image_inside: "img/escapades/escapades_inside/escapade_inside6.webp",
+            image: "/img/escapades/escapade6.webp",
+            image_inside: "/img/escapades/escapades_inside/escapade_inside6.webp",
             content: `<h3>Départ depuis le Col du Châtoux</h3>
           <p>Le circuit débute au Col du Châtoux, un lieu paisible situé à environ 50 kilomètres de Lyon, dans le Haut Beaujolais. Ce col est un point de départ idéal pour explorer cette région moins fréquentée mais tout aussi charmante du Beaujolais, loin des sentiers battus des célèbres vignobles. Dès le départ, vous serez plongé dans une atmosphère tranquille, entouré de forêts et de pâturages verdoyants. Le sentier commence en douceur par une montée progressive à travers une forêt de conifères, caractéristique de cette région montagneuse. Les premières minutes de la marche sont propices à l’observation de la faune locale, avec des écureuils, des chevreuils et une grande variété d'oiseaux que l’on peut croiser en chemin. L’air frais et pur des monts environnants procure une sensation immédiate de déconnexion et de détente.</p>
           
@@ -851,8 +851,8 @@ try {
         }, {
             title: "Le Mont Thou",
             description: "Une randonnée rapide mais intense sur l’un des sommets les plus emblématiques des Monts d’Or, offrant des vues imprenables sur Lyon et les alentours.",
-            image: "img/escapades/escapade7.webp",
-            image_inside: "img/escapades/escapades_inside/escapade_inside7.webp",
+            image: "/img/escapades/escapade7.webp",
+            image_inside: "/img/escapades/escapades_inside/escapade_inside7.webp",
             content: `<h3>Départ depuis Saint-Romain-au-Mont-d’Or</h3>
           <p>Le Mont Thou, situé dans les Monts d'Or, est une randonnée incontournable pour ceux qui souhaitent s'évader rapidement de Lyon tout en profitant de superbes panoramas. Le départ s'effectue depuis le charmant village de Saint-Romain-au-Mont-d’Or, à environ 10 km de Lyon. Ce village pittoresque, avec ses maisons en pierres dorées typiques de la région, donne immédiatement le ton : ici, la nature et l’histoire se côtoient harmonieusement. Dès le début du sentier, la montée est assez soutenue, traversant des rues étroites et des chemins pavés avant de s’enfoncer dans une forêt de chênes et de hêtres. Ce premier tronçon, ombragé et paisible, offre une ascension régulière idéale pour s’échauffer tout en admirant les premières vues sur la Saône.</p>
           
@@ -868,8 +868,8 @@ try {
         }, {
             title: "Le Mont Luisandre et les 4 châteaux",
             description: "Une randonnée fascinante alliant nature et patrimoine, avec des vues panoramiques sur les paysages environnants et la découverte de quatre châteaux historiques.",
-            image: "img/escapades/escapade8.webp",
-            image_inside: "img/escapades/escapades_inside/escapade_inside8.webp",
+            image: "/img/escapades/escapade8.webp",
+            image_inside: "/img/escapades/escapades_inside/escapade_inside8.webp",
             content: `<h3>Départ depuis le village de Chazay-d'Azergues</h3>
           <p>Le circuit commence au charmant village de Chazay-d'Azergues, situé à environ 30 kilomètres de Lyon. Ce village médiéval, avec ses ruelles pavées et ses maisons en pierres, constitue un point de départ idéal pour une journée de randonnée riche en découvertes. À partir de Chazay, le sentier vous mène rapidement à travers des champs et des forêts, offrant un premier aperçu des magnifiques paysages du Beaujolais. La première partie de la randonnée est relativement facile, avec une montée progressive qui permet de s’échauffer en douceur. Au fur et à mesure que vous avancez, le chemin serpente entre les vignes et les bosquets, offrant des vues sur la campagne environnante et les collines qui se dessinent à l'horizon. Les amateurs de photographie apprécieront les nombreux points de vue qui jalonneront votre parcours.</p>
           
@@ -888,8 +888,8 @@ try {
         }, {
             title: "La Roche Percée et le point de vue de Romagneux",
             description: "Une randonnée pittoresque qui vous mène à La Roche Percée, offrant des vues imprenables sur les paysages environnants.",
-            image: "img/escapades/escapade9.webp",
-            image_inside: "img/escapades/escapades_inside/escapade_inside9.webp",
+            image: "/img/escapades/escapade9.webp",
+            image_inside: "/img/escapades/escapades_inside/escapade_inside9.webp",
             content: `<h3>Départ depuis Chassagny</h3>
           <p>La randonnée vers La Roche Percée commence au village de Chassagny, situé à environ 25 km au nord de Lyon. Ce village tranquille est le point de départ idéal pour explorer les magnifiques paysages du Beaujolais. Dès le départ, vous serez immergé dans la nature, avec des sentiers bien balisés qui serpentent à travers des prairies verdoyantes et des forêts. La première partie du parcours est relativement douce, permettant aux randonneurs de profiter de l'air frais et des senteurs de la campagne. En chemin, vous découvrirez des panoramas charmants sur la vallée, qui s'étendent jusqu'aux collines du Beaujolais. Les petits chemins et sentiers creux ajoutent au charme de cette randonnée, qui est accessible à tous.</p>
           
@@ -905,8 +905,8 @@ try {
         }, {
             title: "Le Grand Ratz",
             description: "Une randonnée fascinante qui vous conduit au sommet du Grand Ratz, avec des vues à couper le souffle sur les montagnes environnantes.",
-            image: "img/escapades/escapade10.webp",
-            image_inside: "img/escapades/escapades_inside/escapade_inside10.webp",
+            image: "/img/escapades/escapade10.webp",
+            image_inside: "/img/escapades/escapades_inside/escapade_inside10.webp",
             content: `<h3>Départ depuis le village de Montagnieu</h3>
           <p>La randonnée vers le Grand Ratz débute au charmant village de Montagnieu, situé à environ 30 km de Lyon. Cette randonnée est idéale pour ceux qui cherchent à s'éloigner de l'agitation urbaine et à se plonger dans la beauté naturelle de la région. Le départ se fait à partir de la place du village, où vous pourrez admirer les bâtiments historiques et profiter de l'ambiance paisible. Les premiers kilomètres du sentier sont agréables et accessibles, serpentant à travers des champs ouverts et des forêts, offrant ainsi un mélange de paysages variés. L'ascension commence lentement, mais rapidement, vous serez immergé dans la nature, entouré par le chant des oiseaux et le parfum des fleurs sauvages.</p>
           

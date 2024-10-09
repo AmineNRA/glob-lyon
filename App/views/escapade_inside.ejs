@@ -1,0 +1,22 @@
+<%- include('partials/header') %>
+
+<main>
+    <h2><%=escapade.title%></h2>
+    <img class="image_inside" src="<%=escapade.image_inside%>" alt="">
+    <div class="container">
+        <article>
+            <%-escapade.content%>
+        </article>
+        <aside>
+            <span class="practical_info">Infos pratiques</span>
+            <div class="practical_info--text">
+                <p><span class="info">Lieu :</span> <br> <%=escapade.location%></p>
+                <p><span class="info">Distance de lyon :</span> <br><%=escapade.distance%> de Lyon</p>
+                <p><span class="info">Difficulté:</span> <br> <%=escapade.difficulty%></p>
+                <p><span class="info">Durée :</span> <br> <%=escapade.duration%> heures</p>
+            </div>
+        </aside>
+    </div>
+</main>
+
+<%- include('partials/footer') %>

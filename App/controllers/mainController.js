@@ -57,7 +57,16 @@ export default {
     },
     escapade: async (req, res) => {
         const escapades = await Escapade.findAll({});
+        console.log(escapades[0].id)
         res.render('escapade', { title: "Escapade", style: "escapade", script: "escapade", escapades })
+    },
+    escapade_inside: async (req, res) => {
+        let escapade = await Escapade.findOne({
+            where: {
+                id: req.params.id,
+            },
+        });
+        res.render('escapade_inside', { title: escapade.title, style: 'article', escapade })
     },
     legal: (req, res) => {
         res.render('legal', { title: "Page mentions légales", style: "contact" })

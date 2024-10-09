@@ -11,6 +11,7 @@ router.get('/actualite', mainController.actu);
 router.get('/adresse', mainController.adress);
 router.get('/contact', mainController.contact);
 router.get('/escapade', mainController.escapade);
+router.get('/escapade/:id', mainController.escapade_inside);
 router.get('/legale', mainController.legal);
 router.get('/A-propos', mainController.propos)
 

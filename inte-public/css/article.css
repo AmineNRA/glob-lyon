@@ -12,6 +12,11 @@ h2{
 }
 
 .container{
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+}
+
+.container__article{
     display: flex;
     gap: 300px;
     margin: 2rem 0;
@@ -25,7 +30,7 @@ h3{
 
 article{
     width: 50%;
-    margin-left: 1rem;
+    border-bottom: black 2px solid;
 }
 
 .image_inside{
@@ -56,6 +61,68 @@ article p{
     font-weight: bold;
 }
 
+.author{
+    margin-bottom: 2rem;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.author .fa-solid{
+    color: red;
+}
+
+.fa-heart:hover{
+    cursor: pointer;
+}
+
+.comment__commentary{
+    width: 50%;
+    margin-top: 2rem;
+}
+
+.comment__section--link button {
+    background-color: #3FB1EC;
+    border-style: none;
+    padding: .75rem 1rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.comment__commentary--infos{
+    display: flex;
+    align-items: center;
+}
+
+#name{
+    margin: 0 1rem;
+}
+
+
+.comment__commentary--infos img{
+    clip-path: circle(50% at 50% 50%);
+    width: 50px;
+}
+
+.comment__commentary--text{
+    background-color: #D9D9D9;
+    margin-left: 4rem;
+    padding: 1rem;
+}
+
+.comment__section--form{
+    width: 50%;
+    margin-top: 1rem;
+}
+
+.comment__section--form textarea{
+    width: 100%;
+    margin-bottom: 1rem;
+
+}
+
 @media (max-width:920px) {
     h2{
         font-size: 2rem;
@@ -63,7 +130,7 @@ article p{
     .image_inside{
         width: 100%;
     }
-    .container{
+    .container__article{
         flex-direction: column-reverse;
         gap: 4rem;
     }
@@ -73,11 +140,12 @@ article p{
     }
     .practical_info--text{
         display: grid;
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(1, auto);
         grid-column-gap: 40%;
     }
     aside{
         margin-left: 1rem;
+        width: 100%;
     }
     aside p {
         width: 200px;

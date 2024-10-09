@@ -49,25 +49,26 @@
         </ul>
     </nav>
     <main>
-        <h2>Se connecter</h2>
-        <form action="#" method="get">
-            <label for="email" id="email">
-                Email :
-                <br>
-                <input type="email">
-            </label>
-            <a href="./register.html">Pas encore inscrit ?</a>
-            <br>
-            <label for="password">
-                Mot de passe :
-                <br>
-                <input type="password" id="password">
-            </label>
-            <p>Mot de passe oublié ?</p>
-            <label for="button" id="btn">
-                <input type="button" value="valider" id="button">
-            </label>
-        </form>
+        <div class="container">
+            <h2>Se connecter</h2>
+            <form action="#" method="get">
+                <label for="pseudo">
+                    <i class="fa-regular fa-user fa-lg"></i>
+                    <input type="text" id="pseudo" placeholder="Pseudo">
+                </label>
+                <label for="password">
+                    <i class="fa-solid fa-lock fa-lg"></i>
+                    <input type="password" id="password" placeholder="Mot de passe">
+                </label>
+                <label for="button" id="btn">
+                    <input type="button" value="Connexion" id="button">
+                </label>
+            </form>
+            <div class="link">
+                <a href="/html/register.html">Vous n'êtes pas encore inscrit ?</a>
+                <a href="">Mot de passe oublié ?</a>
+            </div>
+        </div>
 
     </main>
     <footer>

@@ -37,13 +37,13 @@
             <% for( let escapade of escapades ) { %>
                 <article class="article" data-difficulty='<%=escapade.difficulty%>' data-duration="<%=escapade.duration%>h" data-distance="<%=escapade.distance.slice(0,2)%>">
                     <div class="article__img">
-                        <img class="article__img--img" src="<%=escapade.image%>" alt="">
+                        <a href="/escapade/<%=escapade.id%>"><img class="article__img--img" src="<%=escapade.image%>" alt=""></a>
                         <div class="article__img--filterOne"><%=escapade.duration%>h</div>
                         <div class="article__img--filterTwo"><span><%=escapade.distance.slice(0,2)%></span>km</div>
                         <div class="article__img--filterThree"><%=escapade.difficulty%></div>
                     </div>
                     <div class="article__info">
-                        <h3><%=escapade.title%></h3>
+                        <h3><a href="/escapade/<%=escapade.id%>"><%=escapade.title%></a></h3>
                         <p><%=escapade.description%></p>
                     </div>
                 </article>
