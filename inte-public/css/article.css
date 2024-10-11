@@ -78,8 +78,11 @@ article p{
     cursor: pointer;
 }
 
+.comment__section{
+    max-width: 50%;
+}
+
 .comment__commentary{
-    width: 50%;
     margin-top: 2rem;
 }
 
@@ -89,6 +92,15 @@ article p{
     padding: .75rem 1rem;
     font-weight: bold;
     font-size: 1.25rem;
+}
+
+.comment__section--nocomentary{
+    background-color: #49B9F3;
+    color: white;
+    font-size: 1.25rem;
+    margin: 1rem 0;
+    text-align: center;
+    padding: 1rem;
 }
 
 .comment__commentary--infos{
@@ -113,7 +125,6 @@ article p{
 }
 
 .comment__section--form{
-    width: 50%;
     margin-top: 1rem;
 }
 

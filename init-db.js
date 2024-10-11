@@ -1,8 +1,8 @@
 import Article from "./App/models/article.js";
-import Caroussel from "./app/models/caroussel.js";
-import Comment from "./app/models/comment.js";
+import Caroussel from "./App/models/caroussel.js";
+import Comment from "./App/models/comment.js";
 import Escapade from "./App/models/escapade.js";
-import Message from "./app/models/message.js";
+import Message from "./App/models/message.js";
 import Tag from "./App/models/tag.js";
 import User from "./App/models/user.js";
 import sequelize from "./App/database.js";
@@ -11,7 +11,7 @@ import sequelize from "./App/database.js";
 try {
     await sequelize.sync({ force: true });
 
-    await User.create({ pseudo: 'Edief', email: 'amine.noura@ymail.com', password: 'admin', firstname: "Amine", lastname: null, role: "admin" })
+    await User.create({ pseudo: 'Edief', email: 'amine.noura@ymail.com', password: 'admin', firstname: "Amine", lastname: null, role: "admin" });
 
     await Tag.create({ id: 1, label: "Expositions" });
     await Tag.create({ id: 2, label: "Concerts" });
@@ -919,7 +919,8 @@ try {
             difficulty: "Difficile",
             distance: "30 km de Lyon",
             location: "Montagnieu, 38110"
-        }])
+        }]);
+    await Comment.create({ content: "Super article !", article_id: 1, user_id: 1 })
 }
 catch (error) {
     console.log(error)

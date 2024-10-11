@@ -13,6 +13,10 @@ User.init({
             notEmpty: false,
         }
     },
+    avatar: {
+        type: DataTypes.TEXT,
+        defaultValue: '/img/user/default_avatar.webp'
+    },
     email: {
         type: DataTypes.TEXT,
         allowNull: false,

@@ -1,28 +1,31 @@
 <%- include('partials/header') %>
 
     <main>
-        <h2>S'inscrire</h2>
-        <form action="/inscription" method="POST">
-            <label for="email">
-                Email :
-                <br>
-                <input type="email" id="email" name="email">
-            </label>
-            <br>
-            <label for="password">
-                Mot de passe :
-                <br>
-                <input type="password" id="password" name="password">
-            </label>
-            <label for="confpassword"></label>
-            Confirmation de mot de passe :
-            <br>
-            <input type="password" id="confpassword" name="confpassword">
-            </label>
-            <label for="button" id="btn">
-                <input type="submit" value="valider" id="button">
-            </label>
-        </form>
+        <div class="container">
+            <h2>Inscription</h2>
+            <form action="#" method="get">
+                <label for="pseudo">
+                    <i class="fa-regular fa-user fa-lg"></i>
+                    <input type="text" id="pseudo" placeholder="Pseudo">
+                </label>
+                <label for="email">
+                    <i class="fa-solid fa-at fa-lg"></i>
+                    <input type=" email" id="email" placeholder="Email">
+                </label>
+                <label for="password">
+                    <i class="fa-solid fa-lock fa-lg"></i>
+                    <input type="password" id="password" placeholder="Mot de passe">
+                </label>
+                <label for="confpassword">
+                    <i class="fa-solid fa-lock fa-lg"></i>
+                    <input type="password" id="confpassword" placeholder="Confirmation de mot de passe">
+                </label>
+                <label for="button" id="btn">
+                    <input type="button" value="S'inscrire" id="button">
+                </label>
+            </form>
+            <a href="/html/login.html">Vous avez déjà un compte ?</a>
+        </div>
 
     </main>
 

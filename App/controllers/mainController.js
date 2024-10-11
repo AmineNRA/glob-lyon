@@ -1,6 +1,8 @@
 import Article from '../models/article.js';
 import Tag from '../models/tag.js';
 import Escapade from "../models/escapade.js";
+import Comment from '../models/comment.js';
+import User from '../models/user.js';
 import { Op } from "sequelize";
 
 
@@ -31,7 +33,18 @@ export default {
                 id: req.params.id,
             },
         });
-        await res.render('article', { title: article.title, style: "article", article })
+        let comments = await Comment.findAll({
+            where: {
+                article_id: req.params.id
+            },
+            include: [
+                {
+                    model: User,
+                    attributes: ['pseudo', 'avatar']
+                }
+            ]
+        });
+        await res.render('article', { title: article.title, style: "article", article, comments })
     },
     actu: (req, res) => {
         res.render('actu', { title: "Actualité", style: "actu" })

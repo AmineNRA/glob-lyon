@@ -3,7 +3,7 @@ import User from '../models/user.js';
 export default {
     register: (req, res) => {
 
-        res.render('register', { title: "Inscription", style: "login" })
+        res.render('register', { title: "Inscription", style: "register" })
     },
     registerAction: async (req, res) => {
         try {

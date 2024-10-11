@@ -1,22 +1,72 @@
 <%- include('partials/header') %>
 
-<main>
-    <h2><%=article.title%></h2>
-    <img class="image_inside" src="<%=article.image_inside%>" alt="">
-    <div class="container">
-        <article>
-            <%-article.content%>
-        </article>
-        <aside>
-            <span class="practical_info">Infos pratiques</span>
-            <div class="practical_info--text">
-                <p><span class="info">Lieu :</span> <br> <%=article.address%></p>
-                <p><span class="info">Dates :</span> <br><%=article.date%></p>
-                <p><span class="info">Horaires:</span> <br> <%=article.schedule%></p>
-                <p><span class="info">Tarifs :</span> <br> <%=article.price%></p>
+    <main>
+        <h2>
+            <%=article.title%>
+        </h2>
+        <img class="image_inside" src="<%=article.image_inside%>" alt="">
+        <div class="container">
+            <div class="container__article">
+                <article>
+                    <%-article.content%>
+                </article>
+                <aside>
+                    <span class="practical_info">Infos pratiques</span>
+                    <div class="practical_info--text">
+                        <p><span class="info">Lieu :</span> <br>
+                            <%=article.address%>
+                        </p>
+                        <p><span class="info">Dates :</span> <br>
+                            <%=article.date%>
+                        </p>
+                        <p><span class="info">Horaires:</span> <br>
+                            <%=article.schedule%>
+                        </p>
+                        <p><span class="info">Tarifs :</span> <br>
+                            <%=article.price%>
+                        </p>
+                    </div>
+                </aside>
             </div>
-        </aside>
-    </div>
-</main>
+            <div class="author">
+                <span>Ecrit par Edief57</span>
+                <span>Vous avez aimez l'article ? <i id="like" class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="comment__section">
+                <div class="comment__section--link">
+                    <button><a href="#comment">Laisser un commentaire</a></button>
+                </div>
+                <% if (comments.length===0) { %>
+                    <div class="comment__section--nocomentary">
+                        <p>Aucun commentaire pour l’instant, soyez le premier !</p>
+                    </div>
+                    <% } else { %>
+                        <div class="comment__commentary">
+                            <% for( let comment of comments) { %>
+                                <div class="comment__commentary--infos">
+                                    <img src="<%=comment.User.avatar%>" alt="">
+                                    <span id="name">
+                                        <%=comment.User.pseudo%>
+                                    </span>
+                                    <span>
+                                        <%=comment.createAt%>
+                                    </span>
+                                </div>
+                                <div class="comment__commentary--text">
+                                    <%=comment.content%>
+                                </div>
+                        </div>
+                        <% } %>
+                            <% } %>
+                                <div class="comment__section--form" id="comment">
+                                    <form action="#" method="post">
+                                        <textarea name="comment" id="comment" rows="5"
+                                            placeholder="Votre commentaire"></textarea>
+                                        <input type="button" value="Envoyer">
+                                    </form>
+                                </div>
+            </div>
+        </div>
+    </main>
 
-<%- include('partials/footer') %>
+    <%- include('partials/footer') %>
