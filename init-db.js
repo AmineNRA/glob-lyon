@@ -756,7 +756,8 @@ try {
             duration: 2,
             difficulty: "Facile",
             distance: "8 km de Lyon",
-            location: "Parc de l’Abbaye, Rue du Bois de Serres, 69130 Écully"
+            location: "Parc de l’Abbaye, Rue du Bois de Serres, 69130 Écully",
+            user_id: 1
         }, {
             title: "Randonnée à la Madone de Fontaines-Saint-Martin",
             description: "Cette randonnée pittoresque vous conduit au sommet de la Madone de Fontaines-Saint-Martin, offrant une vue panoramique exceptionnelle sur les environs de Lyon et un cheminement à travers des paysages naturels variés.",
@@ -776,7 +777,8 @@ try {
             duration: 2,
             difficulty: "Moyen",
             distance: "10 km de Lyon",
-            location: "Place de la Mairie, Fontaines-Saint-Martin, 69270"
+            location: "Place de la Mairie, Fontaines-Saint-Martin, 69270",
+            user_id: 1
         }, {
             title: "Le Sentier des Vignes, Ampuis",
             description: "Une randonnée au cœur du vignoble d’Ampuis, traversant des collines couvertes de vignes, avec une vue imprenable sur le Rhône et les célèbres coteaux de l’appellation Côte-Rôtie.",
@@ -796,7 +798,8 @@ try {
             duration: 3,
             difficulty: "Moyen",
             distance: "40 km de Lyon",
-            location: "Place de l’Église, Ampuis, 69420"
+            location: "Place de l’Église, Ampuis, 69420",
+            user_id: 1,
         }, {
             title: "Le Col du Planil, Chavanol dans le Pilat",
             description: "Une randonnée nature dans le massif du Pilat, offrant une ascension progressive vers le Col du Planil, avec des panoramas spectaculaires sur les monts environnants.",
@@ -813,7 +816,8 @@ try {
             duration: 4,
             difficulty: "Moyen",
             distance: "45 km de Lyon",
-            location: "Chavanol, 42410 Pélussin"
+            location: "Chavanol, 42410 Pélussin",
+            user_id: 1
         }, {
             title: "Boucle dans les Monts d’Or depuis Saint-Germain (via le Mont Py)",
             description: "Un circuit pittoresque dans les Monts d’Or, offrant une belle ascension vers le Mont Py et des vues dégagées sur la région lyonnaise.",
@@ -830,7 +834,8 @@ try {
             duration: 3,
             difficulty: "Moyen",
             distance: "20 km de Lyon",
-            location: "Saint-Germain-au-Mont-d’Or, 69650"
+            location: "Saint-Germain-au-Mont-d’Or, 69650",
+            user_id: 1,
         }, {
             title: "Circuit en boucle depuis le Col du Châtoux dans le Haut Beaujolais",
             description: "Une randonnée offrant une immersion totale dans les paysages vallonnés du Haut Beaujolais, avec des forêts, des pâturages et des panoramas exceptionnels.",
@@ -847,7 +852,8 @@ try {
             duration: 4,
             difficulty: "Moyen",
             distance: "50 km de Lyon",
-            location: "Col du Châtoux, 69870 Poule-les-Écharmeaux"
+            location: "Col du Châtoux, 69870 Poule-les-Écharmeaux",
+            user_id: 1,
         }, {
             title: "Le Mont Thou",
             description: "Une randonnée rapide mais intense sur l’un des sommets les plus emblématiques des Monts d’Or, offrant des vues imprenables sur Lyon et les alentours.",
@@ -864,7 +870,8 @@ try {
             duration: 2,
             difficulty: "Moyen",
             distance: "10 km de Lyon",
-            location: "Saint-Romain-au-Mont-d'Or, 69270"
+            location: "Saint-Romain-au-Mont-d'Or, 69270",
+            user_id: 1
         }, {
             title: "Le Mont Luisandre et les 4 châteaux",
             description: "Une randonnée fascinante alliant nature et patrimoine, avec des vues panoramiques sur les paysages environnants et la découverte de quatre châteaux historiques.",
@@ -884,7 +891,8 @@ try {
             duration: 4,
             difficulty: "Moyen",
             distance: "30 km de Lyon",
-            location: "Chazay-d'Azergues, 69380"
+            location: "Chazay-d'Azergues, 69380",
+            user_id: 1
         }, {
             title: "La Roche Percée et le point de vue de Romagneux",
             description: "Une randonnée pittoresque qui vous mène à La Roche Percée, offrant des vues imprenables sur les paysages environnants.",
@@ -901,7 +909,8 @@ try {
             duration: 3,
             difficulty: "Moyen",
             distance: "25 km de Lyon",
-            location: "Chassagny, 69440"
+            location: "Chassagny, 69440",
+            user_id: 1
         }, {
             title: "Le Grand Ratz",
             description: "Une randonnée fascinante qui vous conduit au sommet du Grand Ratz, avec des vues à couper le souffle sur les montagnes environnantes.",
@@ -918,7 +927,8 @@ try {
             duration: 4,
             difficulty: "Difficile",
             distance: "30 km de Lyon",
-            location: "Montagnieu, 38110"
+            location: "Montagnieu, 38110",
+            user_id: 1
         }]);
     await Comment.create({ content: "Super article !", article_id: 1, user_id: 1 })
 }

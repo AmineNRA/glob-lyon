@@ -2,6 +2,7 @@ import { Model, DataTypes } from 'sequelize';
 import sequelize from '../database.js';
 import Article from './article.js';
 import User from './user.js';
+import Escapade from './escapade.js';
 
 class Comment extends Model { };
 
@@ -19,7 +20,15 @@ Comment.init({
             model: Article,
             key: 'id'
         },
-        allowNull: false
+        allowNull: true
+    },
+    escapade_id: {
+        type: DataTypes.INTEGER,
+        references: {
+            model: Escapade,
+            key: 'id'
+        },
+        allowNull: true
     },
     user_id: {
         type: DataTypes.INTEGER,
@@ -37,5 +46,6 @@ Comment.init({
 
 Comment.belongsTo(Article, { foreignKey: 'article_id' });
 Comment.belongsTo(User, { foreignKey: 'user_id' })
+Comment.belongsTo(Escapade, { foreignKey: 'escapade_id' })
 
 export default Comment;

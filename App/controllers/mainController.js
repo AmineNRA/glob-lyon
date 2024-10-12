@@ -4,11 +4,12 @@ import Escapade from "../models/escapade.js";
 import Comment from '../models/comment.js';
 import User from '../models/user.js';
 import { Op } from "sequelize";
+import DOMPurify from 'dompurify';
 
 
 
 export default {
-    home: (req, res) => {
+    home: async (req, res) => {
         res.render('home', { title: "Page d'acceuil", style: "home", script: "home" })
     },
     activity: async (req, res) => {
@@ -32,6 +33,12 @@ export default {
             where: {
                 id: req.params.id,
             },
+            include: [
+                {
+                    model: User,
+                    attributes: ['pseudo']
+                }
+            ]
         });
         let comments = await Comment.findAll({
             where: {
@@ -44,7 +51,21 @@ export default {
                 }
             ]
         });
-        await res.render('article', { title: article.title, style: "article", article, comments })
+        res.render('article', { title: article.title, style: "article", article, comments })
+    },
+    articleAction: async (req, res) => {
+        try {
+            if (!req.session.user) {
+                return res.status(401).send('Vous devez être connecté pour poster un commentaire')
+            }
+            const comment = await Comment.create({ content: req.body.comment, article_id: req.params.id, user_id: req.session.user.id })
+            res.redirect(`/article/${req.params.id}`)
+        }
+        catch (error) {
+            console.error(error);
+            res.status(500).send('Erreur lors de la création du commentaire')
+        }
+
     },
     actu: (req, res) => {
         res.render('actu', { title: "Actualité", style: "actu" })
@@ -78,8 +99,39 @@ export default {
             where: {
                 id: req.params.id,
             },
+            include: [
+                {
+                    model: User,
+                    attributes: ['pseudo']
+                }
+            ]
         });
-        res.render('escapade_inside', { title: escapade.title, style: 'article', escapade })
+        let comments = await Comment.findAll({
+            where: {
+                escapade_id: req.params.id
+            },
+            include: [
+                {
+                    model: User,
+                    attributes: ['pseudo', 'avatar']
+                }
+            ]
+        });
+        res.render('escapade_inside', { title: escapade.title, style: 'article', escapade, comments })
+    },
+    escapade_insideAction: async (req, res) => {
+        try {
+            if (!req.session.user) {
+                return res.status(401).send('Vous devez être connecté pour poster un commentaire')
+            }
+            const addComment = await Comment.create({ content: req.body.comment, escapade_id: req.params.id, user_id: req.session.user.id })
+            res.redirect(`/escapade/${req.params.id}`)
+        }
+        catch (error) {
+            console.error(error);
+            res.status(500).send('Erreur lors de la création du commentaire')
+        }
+
     },
     legal: (req, res) => {
         res.render('legal', { title: "Page mentions légales", style: "contact" })

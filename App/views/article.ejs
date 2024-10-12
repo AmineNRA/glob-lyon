@@ -29,7 +29,7 @@
                 </aside>
             </div>
             <div class="author">
-                <span>Ecrit par Edief57</span>
+                <span>Ecrit par <%=article.User.pseudo%></span>
                 <span>Vous avez aimez l'article ? <i id="like" class="fa-regular fa-heart"></i></span>
             </div>
             <div class="comment__section">
@@ -41,31 +41,41 @@
                         <p>Aucun commentaire pour l’instant, soyez le premier !</p>
                     </div>
                     <% } else { %>
-                        <div class="comment__commentary">
-                            <% for( let comment of comments) { %>
+                        <% for( let comment of comments) { %>
+                            <div class="comment__commentary">
                                 <div class="comment__commentary--infos">
                                     <img src="<%=comment.User.avatar%>" alt="">
                                     <span id="name">
                                         <%=comment.User.pseudo%>
                                     </span>
                                     <span>
-                                        <%=comment.createAt%>
+                                        <%=comment.createdAt%>
                                     </span>
                                 </div>
                                 <div class="comment__commentary--text">
                                     <%=comment.content%>
                                 </div>
-                        </div>
-                        <% } %>
+                            </div>
                             <% } %>
-                                <div class="comment__section--form" id="comment">
-                                    <form action="#" method="post">
-                                        <textarea name="comment" id="comment" rows="5"
-                                            placeholder="Votre commentaire"></textarea>
-                                        <input type="button" value="Envoyer">
-                                    </form>
-                                </div>
+                                <% } %>
+                                    <% if (isAuthenticated) { %>
+                                        <div class="comment__section--form">
+                                            <form action="#" method="post">
+                                                <textarea name="comment" id="comment" rows="5"
+                                                    placeholder="Votre commentaire"></textarea>
+                                                <input type="submit" value="Envoyer">
+                                            </form>
+                                        </div>
+                                        <% } else { %>
+                                            <div class="comment__section--form">
+                                                <form action="#" method="post">
+                                                    <textarea disabled class="no__authenticated" rows="5"
+                                                        placeholder="Vous devez être connecté pour laisser un commentaire"></textarea>
+                                                    <input disabled type="submit" class="disabled" value="Envoyer">
+                                                </form>
+                                            </div>
             </div>
+            <% } %>
         </div>
     </main>
 

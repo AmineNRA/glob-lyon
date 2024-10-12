@@ -27,14 +27,16 @@ form{
 
 input{
     width: 15rem;
-    height: 1.5rem;
+    height: 2rem;
     box-shadow: 0px 6px 4px -4px black;
     border: none;
     margin-top: 1rem;
     font-weight: bold;
+    font-size: 1.25rem;
+    font-family: "Roboto", sans-serif;
 }
 
-input[type="button"]{
+input[type="submit"]{
     margin-left: 2.5rem;
     background: linear-gradient(90deg, rgba(0,215,209,1) 19%, rgba(0,177,210,1) 100%);
     border-radius: 50px;
@@ -43,7 +45,7 @@ input[type="button"]{
     line-height: .2rem;
 }
 
-input[type="button"]:hover{
+input[type="submit"]:hover{
     cursor: pointer;
 }
 
@@ -60,3 +62,9 @@ form i{
     color: white;
 }
 
+@media (max-width: 600px) {
+    .container{
+        margin-inline: 2rem;
+        width: auto;
+    }
+}

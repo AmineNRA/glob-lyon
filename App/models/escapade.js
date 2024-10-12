@@ -66,13 +66,6 @@ Escapade.init({
         type: DataTypes.TEXT,
         allowNull: true
     },
-    tag_id: {
-        type: DataTypes.INTEGER,
-        references: {
-            model: Tag,
-            key: 'id'
-        }
-    },
     user_id: {
         type: DataTypes.INTEGER,
         references: {

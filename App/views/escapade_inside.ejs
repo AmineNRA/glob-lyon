@@ -1,22 +1,82 @@
 <%- include('partials/header') %>
 
-<main>
-    <h2><%=escapade.title%></h2>
-    <img class="image_inside" src="<%=escapade.image_inside%>" alt="">
-    <div class="container">
-        <article>
-            <%-escapade.content%>
-        </article>
-        <aside>
-            <span class="practical_info">Infos pratiques</span>
-            <div class="practical_info--text">
-                <p><span class="info">Lieu :</span> <br> <%=escapade.location%></p>
-                <p><span class="info">Distance de lyon :</span> <br><%=escapade.distance%> de Lyon</p>
-                <p><span class="info">Difficulté:</span> <br> <%=escapade.difficulty%></p>
-                <p><span class="info">Durée :</span> <br> <%=escapade.duration%> heures</p>
+    <main>
+        <h2>
+            <%=escapade.title%>
+        </h2>
+        <img class="image_inside" src="<%=escapade.image_inside%>" alt="">
+        <div class="container">
+            <div class="container__article">
+                <article>
+                    <%-escapade.content%>
+                </article>
+                <aside>
+                    <span class="practical_info">Infos pratiques</span>
+                    <div class="practical_info--text">
+                        <p><span class="info">Lieu :</span> <br>
+                            <%=escapade.location%>
+                        </p>
+                        <p><span class="info">Distance de lyon :</span> <br>
+                            <%=escapade.distance%> de Lyon
+                        </p>
+                        <p><span class="info">Difficulté:</span> <br>
+                            <%=escapade.difficulty%>
+                        </p>
+                        <p><span class="info">Durée :</span> <br>
+                            <%=escapade.duration%> heures
+                        </p>
+                    </div>
+                </aside>
             </div>
-        </aside>
-    </div>
-</main>
+            <div class="author">
+                <span>Ecrit par <%=escapade.User.pseudo%></span>
+                <span>Vous avez aimez l'article ? <i id="like" class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="comment__section">
+                <div class="comment__section--link">
+                    <button><a href="#comment">Laisser un commentaire</a></button>
+                </div>
+                <% if (comments.length===0) { %>
+                    <div class="comment__section--nocomentary">
+                        <p>Aucun commentaire pour l’instant, soyez le premier !</p>
+                    </div>
+                    <% } else { %>
+                        <% for( let comment of comments) { %>
+                            <div class="comment__commentary">
+                                <div class="comment__commentary--infos">
+                                    <img src="<%=comment.User.avatar%>" alt="">
+                                    <span id="name">
+                                        <%=comment.User.pseudo%>
+                                    </span>
+                                    <span>
+                                        <%=comment.createdAt%>
+                                    </span>
+                                </div>
+                                <div class="comment__commentary--text">
+                                    <%=comment.content%>
+                                </div>
+                            </div>
+                            <% } %>
+                                <% } %>
+                                    <% if (isAuthenticated) { %>
+                                        <div class="comment__section--form">
+                                            <form action="#" method="post">
+                                                <textarea name="comment" id="comment" rows="5"
+                                                    placeholder="Votre commentaire"></textarea>
+                                                <input type="submit" value="Envoyer">
+                                            </form>
+                                        </div>
+                                        <% } else { %>
+                                            <div class="comment__section--form">
+                                                <form action="#" method="post">
+                                                    <textarea disabled class="no__authenticated" rows="5"
+                                                        placeholder="Vous devez être connecté pour laisser un commentaire"></textarea>
+                                                    <input disabled type="submit" class="disabled" value="Envoyer">
+                                                </form>
+                                            </div>
+            </div>
+            <% } %>
+        </div>
+    </main>
 
-<%- include('partials/footer') %>
+    <%- include('partials/footer') %>

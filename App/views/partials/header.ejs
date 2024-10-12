@@ -28,7 +28,7 @@
         <nav class="menu__small-screen">
             <div class="menu" id="menu" popover>
                 <div class="button__account-close">
-                    <a href="./login.html"><i class="fa-regular fa-user fa-3x"></i></a>
+                    <a href="/login"><i class="fa-regular fa-user fa-3x"></i></a>
                     <button popovertarget="menu" popoveraction="hide"><i
                             class="fa-regular fa-circle-xmark fa-3x"></i></button>
                 </div>
@@ -41,9 +41,19 @@
             </div>
         </nav>
         <h1><a href="/">Glob'Lyon</a></h1>
-        <a href="/inscription">
-            <div class="account"><i class="fa-regular fa-user fa-lg"></i></div>
-        </a>
+        <div class="header__button">
+            <% if (isAuthenticated) { %>
+                <a href="/A-propos">
+                    <img class="account" src="<%=user.avatar%>" alt="avatar">
+                </a>
+                <a href="/logout"><i class="fa-solid fa-power-off fa-2x"></i></a>
+
+                <% } else { %>
+                    <a href="/inscription">
+                        <i class="fa-solid fa-circle-user fa-2x"></i>
+                    </a>
+                    <% } %>
+        </div>
     </header>
 
     <nav class="menu__largescreen">

@@ -3,21 +3,21 @@
     <main>
         <div class="container">
             <h2>Se connecter</h2>
-            <form action="#" method="get">
+            <form action="#" method="post">
                 <label for="pseudo">
                     <i class="fa-regular fa-user fa-lg"></i>
-                    <input type="text" id="pseudo" placeholder="Pseudo">
+                    <input type="text" id="pseudo" placeholder="Pseudo" name="pseudo">
                 </label>
                 <label for="password">
                     <i class="fa-solid fa-lock fa-lg"></i>
-                    <input type="password" id="password" placeholder="Mot de passe">
+                    <input type="password" id="password" placeholder="Mot de passe" name="password">
                 </label>
-                <label for="button" id="btn">
-                    <input type="button" value="Connexion" id="button">
+                <label for="submit" id="btn">
+                    <input type="submit" value="Connexion" id="submit">
                 </label>
             </form>
             <div class="link">
-                <a href="/html/register.html">Vous n'êtes pas encore inscrit ?</a>
+                <a href="/inscription">Vous n'êtes pas encore inscrit ?</a>
                 <a href="">Mot de passe oublié ?</a>
             </div>
         </div>
