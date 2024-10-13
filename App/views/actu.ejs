@@ -10,60 +10,22 @@
         </div>
 
         <div class="container">
-
-            <article class="article">
-                <div class="article__img">
-                    <img class="article__img--img" src="/img/escapade.png" alt="">
-                    <div class="article__img--filter">
-                        <h3>Actu</h3>
+            <% for( let actu of actus ) { %>
+                <article class="article">
+                    <div class="article__img">
+                        <a href="/article/<%=actu.id%>"><img class="article__img--img" src="<%=actu.image%>" alt=""></a>
+                        <div class="article__img--filter">
+                            <span>Actu</span>
+                        </div>
                     </div>
-                </div>
-            </article>
-
-            <article class="article">
-                <div class="article__img">
-                    <img class="article__img--img" src="/img/escapade.png" alt="">
-                    <div class="article__img--filter">
-                        <h3>Actu</h3>
-                    </div>
-                </div>
-            </article>
-
-            <article class="article">
-                <div class="article__img">
-                    <img class="article__img--img" src="/img/escapade.png" alt="">
-                    <div class="article__img--filter">
-                        <h3>Actu</h3>
-                    </div>
-                </div>
-            </article>
-
-            <article class="article">
-                <div class="article__img">
-                    <img class="article__img--img" src="/img/escapade.png" alt="">
-                    <div class="article__img--filter">
-                        <h3>Actu</h3>
-                    </div>
-                </div>
-            </article>
-
-            <article class="article">
-                <div class="article__img">
-                    <img class="article__img--img" src="/img/escapade.png" alt="">
-                    <div class="article__img--filter">
-                        <h3>Actu</h3>
-                    </div>
-                </div>
-            </article>
-
-            <article class="article">
-                <div class="article__img">
-                    <img class="article__img--img" src="/img/escapade.png" alt="">
-                    <div class="article__img--filter">
-                        <h3>Actu</h3>
-                    </div>
-                </div>
-            </article>
+                    <h3>
+                        <%=actu.title%>
+                    </h3>
+                    <p>
+                        <%=actu.description%>
+                    </p>
+                </article>
+                <% } %>
         </div>
 
     </main>

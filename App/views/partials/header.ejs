@@ -13,12 +13,14 @@
         rel="stylesheet">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/<%= style %>.css">
-    <script src="https://kit.fontawesome.com/b412df9a8a.js" crossorigin="anonymous"></script>
-    <% if (typeof script !=="undefined" ) { %>
-        <script defer type="module" src="/script/<%= script %>.js">
-        </script>
+    <% if (typeof style !=="undefined" ) { %>
+        <link rel="stylesheet" href="/css/<%= style %>.css">
         <% } %>
+            <script src="https://kit.fontawesome.com/b412df9a8a.js" crossorigin="anonymous"></script>
+            <% if (typeof script !=="undefined" ) { %>
+                <script defer type="module" src="/script/<%= script %>.js">
+                </script>
+                <% } %>
 
 </head>
 
@@ -43,7 +45,7 @@
         <h1><a href="/">Glob'Lyon</a></h1>
         <div class="header__button">
             <% if (isAuthenticated) { %>
-                <a href="/A-propos">
+                <a href="/account">
                     <img class="account" src="<%=user.avatar%>" alt="avatar">
                 </a>
                 <a href="/logout"><i class="fa-solid fa-power-off fa-2x"></i></a>

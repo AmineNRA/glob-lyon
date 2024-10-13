@@ -1,0 +1,32 @@
+<%- include('partials/header') %>
+
+    <main>
+        <div class="container">
+            <h2>Bienvenue <%=foundUser.pseudo%>
+            </h2>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <label for="avatar">
+                    <img src="<%= foundUser.avatar%>" alt="">
+                    <input type="file" name="avatar">
+                </label>
+                <label for="pseudo">
+                    Pseudo :
+                    <input type="text" id="pseudo" name="pseudo" placeholder="<%= foundUser.pseudo%>">
+                </label>
+                <label for="email">
+                    Email :
+                    <input type="email" id="email" name="email" placeholder="<%=foundUser.email%>">
+                </label>
+                <label for="password">
+                    Mot de passe :
+                    <input type="password" id="password" name="password" placeholder="*****">
+                </label>
+                <label for="submit" id="btn">
+                    <input type="submit" value="Enregistrer les modifications" id="submit">
+                </label>
+            </form>
+        </div>
+    </main>
+
+
+    <%- include('partials/footer') %>

@@ -16,10 +16,6 @@ h2{
     margin-bottom: 2rem;
 }
 
-main{
-    height: 30vw;
-}
-
 form{
     display: flex;
     flex-direction: column;

@@ -1,6 +1,18 @@
 import express from 'express';
 import mainController from "./controllers/mainController.js";
 import logController from './controllers/logController.js';
+import script from './middleware/uploadImage.js'
+
+// const storage = multer.diskStorage({
+//     destination: function (req, file, cb) {
+//         cb(null, './inte-public/img/user')
+//     },
+//     filename: function (req, file, cb) {
+//         cb(null, file.originalname)
+//     }
+// })
+
+// const upload = multer({ storage })
 
 const router = express.Router();
 
@@ -26,6 +38,9 @@ router.post('/inscription', logController.registerAction)
 
 router.get('/login', logController.login)
 router.post('/login', logController.loginAction);
+
+router.get('/account', logController.account)
+router.post('/account', script.processAvatar, logController.accountAction)
 
 router.get('/logout', logController.logout);
 

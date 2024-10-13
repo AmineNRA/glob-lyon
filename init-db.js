@@ -23,6 +23,7 @@ try {
     await Tag.create({ id: 8, label: "Bars/Clubs" });
     await Tag.create({ id: 9, label: "Hébergement" });
     await Tag.create({ id: 10, label: "Bien-être/Santé" });
+    await Tag.create({ id: 11, label: "Actu" });
 
 
 
@@ -930,6 +931,134 @@ try {
             location: "Montagnieu, 38110",
             user_id: 1
         }]);
+
+    await Article.bulkCreate([{
+        title: "Festival Peinture Fraîche",
+        image: "/img/articles/article44.webp",
+        image_inside: "img/articles/articles_inside/article_inside44.webp",
+        description: "Festival d'art urbain et numérique avec des fresques interactives et œuvres en réalité augmentée.",
+        content: `<h3>Peinture Fraîche : l'art à l'honneur</h3><p>Le festival Peinture Fraîche revient pour sa 6e édition avec un virage vers l'art numérique. En plus des fresques urbaines habituelles, cette année mettra en avant des créations en réalité augmentée, permettant aux visiteurs d'interagir avec les œuvres via leurs smartphones.</p><h3>Artistes et installations</h3><p>Des artistes internationaux exposeront une quinzaine d'œuvres numériques, tandis que quatre fresques interactives seront installées dans les rues de Lyon. L'événement se veut participatif, avec des installations qui questionnent notre rapport à la réalité grâce aux nouvelles technologies.</p><h3>Réservez votre place</h3><p>Il est nécessaire de réserver en ligne. Aucun billet ne sera vendu sur place. L'événement promet une expérience immersive unique pour les amateurs d'art et de technologie.</p>`,
+        address: "Ancien Collège Serin, 2 Place de Serin, 69004 Lyon",
+        date: "Du 9 octobre au 3 novembre 2024",
+        schedule: "De 10h à 18h",
+        price: "6 à 8 euros",
+        user_id: 1,
+        tag_id: 11,
+        view: 0,
+        like: 0
+    }, {
+        title: "Village des Créateurs",
+        image: "/img/articles/article45.webp",
+        image_inside: "img/articles/articles_inside/article_inside45.webp",
+        description: "Exposition des créateurs lyonnais en célébration des 20 ans du Village des Créateurs.",
+        content: `<h3>Une rétrospective du design local</h3><p>Pour célébrer ses 20 ans, le Village des Créateurs organise une exposition inédite, mettant en avant les talents locaux en matière de mode, design, et innovation. Cette rétrospective permet de découvrir ou redécouvrir les œuvres de designers ayant marqué la scène créative lyonnaise ces deux dernières décennies.</p><h3>Des pièces iconiques</h3><p>Des vêtements, meubles et objets divers seront exposés, reflétant l'évolution des tendances et des matériaux utilisés. C'est une occasion unique de rencontrer certains des créateurs et d'assister à des ateliers autour du design et de la mode durable.</p><h3>Inspirez-vous</h3><p>Profitez de cette exposition pour enrichir vos idées déco ou simplement admirer le talent local. Des ventes privées et des événements exclusifs seront organisés pendant toute la durée de l'exposition.</p>`,
+        address: "19 Rue René Leynaud, 69001 Lyon",
+        date: "Du 15 au 22 novembre 2024",
+        schedule: "10h - 19h",
+        price: "Gratuit",
+        user_id: 1,
+        tag_id: 11,
+        view: 0,
+        like: 0
+    }, {
+        title: "Salon du Chocolat de Lyon",
+        image: "/img/articles/article46.webp",
+        image_inside: "img/articles/articles_inside/article_inside46.webp",
+        description: "Le rendez-vous des gourmands et amateurs de chocolat.",
+        content: `<h3>Un événement gourmand</h3><p>Le Salon du Chocolat revient à Lyon pour une nouvelle édition pleine de saveurs. Découvrez les créations des meilleurs chocolatiers, pâtissiers et artisans du monde entier. L'événement est aussi l'occasion d'assister à des démonstrations culinaires et des ateliers pour petits et grands gourmands.</p><h3>Des dégustations et animations</h3><p>Au programme : dégustations, rencontres avec des artisans passionnés, et découvertes de nouvelles saveurs chocolatées. Ne manquez pas le défilé de robes en chocolat, un incontournable du salon !</p><h3>Un espace pour tous</h3><p>Pour les amateurs et les professionnels, le Salon du Chocolat propose également des conférences et des ateliers pour apprendre à travailler le chocolat comme un pro.</p>`,
+        address: "Halle Tony Garnier, 20 Place des Docteurs Mérieux, 69007 Lyon",
+        date: "Du 9 au 11 novembre 2024",
+        schedule: "10h - 19h",
+        price: "15 euros",
+        user_id: 1,
+        tag_id: 11,
+        view: 0,
+        like: 0
+    }, {
+        title: "Fête des Lumières 2024",
+        image: "/img/articles/article47.webp",
+        image_inside: "img/articles/articles_inside/article_inside47.webp",
+        description: "L'événement emblématique de Lyon revient avec de nouvelles installations lumineuses.",
+        content: `<h3>Lumières et féerie dans les rues de Lyon</h3><p>La célèbre Fête des Lumières de Lyon est de retour pour une nouvelle édition magique. Comme chaque année, la ville se transformera en un véritable écrin lumineux, avec des installations artistiques et poétiques qui illuminent les plus beaux monuments et espaces de la ville.</p><h3>Un parcours lumineux</h3><p>Des centaines d'artistes illumineront les rues avec des créations uniques. Parcourez la ville pour découvrir les spectacles de lumière, les projections sur les bâtiments historiques, et des œuvres immersives inédites.</p><h3>Un événement incontournable</h3><p>Véritable célébration lyonnaise, la Fête des Lumières attire chaque année des millions de visiteurs. Assurez-vous d'arriver tôt pour profiter au mieux des œuvres et des spectacles. Le programme est à ne pas manquer pour petits et grands.</p>`,
+        address: "Différents lieux dans Lyon",
+        date: "Du 7 au 10 décembre 2024",
+        schedule: "De 18h à 23h",
+        price: "Gratuit",
+        user_id: 1,
+        tag_id: 11,
+        view: 0,
+        like: 0
+    }, {
+        title: "Marché de Noël Lyon",
+        image: "/img/articles/article48.webp",
+        image_inside: "img/articles/articles_inside/article_inside48.webp",
+        description: "Le marché de Noël traditionnel de Lyon avec ses chalets et animations festives.",
+        content: `<h3>Un village de Noël à Lyon</h3><p>Le marché de Noël de Lyon s'installe à nouveau Place Carnot, transformant la ville en un véritable village de Noël. Découvrez des centaines de chalets proposant des produits artisanaux, des décorations festives, et bien sûr, des gourmandises hivernales typiques comme les marrons chauds et le vin chaud.</p><h3>Des animations pour toute la famille</h3><p>En plus des étals, le marché offre de nombreuses animations, telles que des spectacles de rue, des ateliers pour enfants et une patinoire en plein air. Les illuminations ajoutent une touche de féerie supplémentaire à cet événement.</p><h3>Préparez vos fêtes</h3><p>C'est l'occasion parfaite pour faire vos emplettes de Noël, tout en profitant de l'atmosphère chaleureuse et festive qui règne sur la place.</p>`,
+        address: "Place Carnot, 69002 Lyon",
+        date: "Du 24 novembre au 24 décembre 2024",
+        schedule: "10h - 20h",
+        price: "Gratuit",
+        user_id: 1,
+        tag_id: 11,
+        view: 0,
+        like: 0
+    }, {
+        title: "Mâchon'Week",
+        image: "/img/articles/article49.webp",
+        image_inside: "img/articles/articles_inside/article_inside49.webp",
+        description: "Une semaine dédiée à la gastronomie lyonnaise avec des événements gourmands autour du fameux mâchon.",
+        content: `<h3>Un festival autour de la tradition lyonnaise</h3> <p>La Mâchon’Week revient cette année pour une célébration de la cuisine traditionnelle lyonnaise. Durant une semaine, plusieurs événements culinaires se dérouleront autour du célèbre repas des canuts, le mâchon. Des dégustations, des ateliers culinaires et des afterworks sont prévus dans divers établissements.</p> <h3>Des lieux emblématiques pour découvrir le mâchon</h3> <p>Certains des meilleurs bouchons de la ville participent à cet événement, avec des menus spéciaux et des offres exclusives. Que vous soyez un amateur de cuisine ou que vous souhaitiez simplement découvrir une part de la culture gastronomique de Lyon, la Mâchon’Week est une opportunité à ne pas manquer.</p> <h3>Animations et convivialité au programme</h3> <p>En plus des dégustations, des animations telles que des démonstrations de chefs ou des concerts auront lieu, faisant de cette semaine un rendez-vous festif à Lyon.</p>`,
+        address: "Divers lieux à Lyon",
+        date: "Du 7 au 13 octobre 2024",
+        schedule: "Selon les événements",
+        price: "Variable selon l'événement",
+        user_id: 1,
+        tag_id: 11,
+        view: 0,
+        like: 0
+    }, {
+        title: "Lyon Braderie Festival",
+        image: "/img/articles/article50.webp",
+        image_inside: "img/articles/articles_inside/article_inside50.webp",
+        description: "Le plus grand marché à ciel ouvert de Lyon avec des stands de mode, déco et accessoires.",
+        content: `<h3>Un rendez-vous shopping incontournable</h3> <p>Le Lyon Braderie Festival est l'occasion idéale pour profiter de bonnes affaires. Sur la Presqu’île, les stands s'installent dans les rues principales pour proposer vêtements, déco, accessoires et bien plus encore. C'est un rendez-vous très attendu des amateurs de mode et de bonnes affaires.</p> <h3>Une ambiance festive et animée</h3> <p>Outre les stands de vente, des animations et des food trucks sont installés pour que les visiteurs puissent se détendre et profiter de l'atmosphère conviviale. De nombreux commerçants participent, ce qui fait de cet événement une immersion complète dans le commerce local lyonnais.</p> <h3>Du shopping et des surprises</h3> <p>En plus de dénicher de bonnes affaires, le festival propose également des animations musicales et des ateliers pour petits et grands. Un moment à partager en famille ou entre amis.</p>`,
+        address: "Rue de la République et alentours, Lyon 1er",
+        date: "Du 11 au 13 octobre 2024",
+        schedule: "Toute la journée",
+        price: "Gratuit",
+        user_id: 1, tag_id: 11,
+        view: 0,
+        like: 0
+    }, {
+        title: "Festival Lumière",
+        image: "/img/articles/article51.webp",
+        image_inside: "img/articles/articles_inside/article_inside51.webp",
+        description: "Le rendez-vous incontournable des cinéphiles avec des projections de films classiques et inédits.",
+        content: `<h3>Un hommage au cinéma</h3> <p>Le Festival Lumière est une célébration du 7ème art dans la ville natale du cinéma. Chaque année, des projections de films cultes et de nouveaux chefs-d'œuvre sont proposées dans plusieurs cinémas de Lyon. Cette année encore, le festival promet de rendre hommage à des figures iconiques du cinéma tout en proposant des avant-premières.</p> <h3>Des événements en parallèle</h3> <p>Au-delà des projections, le Festival Lumière propose également des rencontres avec des réalisateurs, acteurs et experts du cinéma, des masterclass et des expositions. L’occasion de plonger dans l’histoire et l’avenir du cinéma.</p> <h3>Un événement cinéphile à ne pas manquer</h3> <p>Que vous soyez passionné par le cinéma d’auteur, les grands classiques ou les découvertes contemporaines, le Festival Lumière offre une programmation éclectique, accessible à tous les publics.</p>`,
+        address: "Institut Lumière et divers cinémas à Lyon",
+        date: "Du 12 au 20 octobre 2024",
+        schedule: "Selon les séances",
+        price: "À partir de 7 €",
+        user_id: 1,
+        tag_id: 11,
+        view: 0,
+        like: 0
+    }, {
+        title: "Vogue des Marrons",
+        image: "/img/articles/article52.webp",
+        image_inside: "img/articles/articles_inside/article_inside52.webp",
+        description: "La fête foraine emblématique de la Croix-Rousse avec des manèges et les célèbres marrons chauds.",
+        content: `<h3>Une fête foraine traditionnelle</h3> <p>La Vogue des Marrons est une fête foraine emblématique qui se déroule chaque année sur le boulevard de la Croix-Rousse. Manèges, stands de confiseries, et bien sûr les célèbres marrons chauds sont au programme. C’est un rendez-vous incontournable pour les familles et les amateurs de sensations fortes.</p> <h3>Des attractions pour tous les âges</h3> <p>Des manèges pour petits et grands, des jeux d'adresse, des loteries, la Vogue propose une diversité d'activités qui en fait un lieu de sortie idéal en famille ou entre amis.</p> <h3>Une immersion dans l’esprit festif lyonnais</h3> <p>En plus des manèges, l’ambiance conviviale de la fête, avec ses odeurs de barbes à papa et de marrons grillés, attire les Lyonnais et les visiteurs de tous horizons.</p>`,
+        address: "Boulevard de la Croix-Rousse, Lyon 4e",
+        date: "Du 5 octobre au 11 novembre 2024",
+        schedule: "Toute la journée",
+        price: "Entrée gratuite, manèges payants",
+        user_id: 1,
+        tag_id: 11,
+        view: 0,
+        like: 0
+    }])
+
     await Comment.create({ content: "Super article !", article_id: 1, user_id: 1 })
 }
 catch (error) {

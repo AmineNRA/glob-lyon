@@ -10,7 +10,14 @@ import DOMPurify from 'dompurify';
 
 export default {
     home: async (req, res) => {
-        res.render('home', { title: "Page d'acceuil", style: "home", script: "home" })
+        const articles = await Article.findAll({
+            where: {
+                tag_id: 11
+            },
+            order: ['createdAt'],
+            limit: 4
+        })
+        res.render('home', { title: "Page d'acceuil", style: "home", script: "home", articles })
     },
     activity: async (req, res) => {
         const articles = await Article.findAll({
@@ -26,6 +33,7 @@ export default {
                 }
             ]
         });
+        console.log(articles[0])
         res.render('activity', { title: "Activité", style: "activity", script: "filter", articles })
     },
     article: async (req, res) => {
@@ -63,12 +71,17 @@ export default {
         }
         catch (error) {
             console.error(error);
-            res.status(500).send('Erreur lors de la création du commentaire')
+            res.status(403).render('error', { title: 'Erreur', message: error.message })
         }
 
     },
-    actu: (req, res) => {
-        res.render('actu', { title: "Actualité", style: "actu" })
+    actu: async (req, res) => {
+        let actus = await Article.findAll({
+            where: {
+                tag_id: 11
+            },
+        });
+        res.render('actu', { title: "Actualité", style: "actu", actus })
     },
     adress: async (req, res) => {
         const articles = await Article.findAll({
@@ -122,14 +135,14 @@ export default {
     escapade_insideAction: async (req, res) => {
         try {
             if (!req.session.user) {
-                return res.status(401).send('Vous devez être connecté pour poster un commentaire')
+                return res.status(401).render('error', { title: "Erreur", message: 'Vous devez être connecté pour poster un commentaire' })
             }
             const addComment = await Comment.create({ content: req.body.comment, escapade_id: req.params.id, user_id: req.session.user.id })
             res.redirect(`/escapade/${req.params.id}`)
         }
         catch (error) {
             console.error(error);
-            res.status(500).send('Erreur lors de la création du commentaire')
+            res.status(403).render('error', { title: "Erreur", message: 'Erreur lors de la création du commentaire' })
         }
 
     },

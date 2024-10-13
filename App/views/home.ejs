@@ -22,7 +22,18 @@
         </div>
 
         <div class="container">
-            <article class="article">
+            <% for( let article of articles ) { %>
+                <article class="article">
+                    <div class="article__title">
+                        <h3>
+                            <%= article.title%>
+                        </h3>
+                        <a href="/article/<%=article.id%>" class="link">Lire <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <img class="article__img" src="<%=article.image%>" alt="">
+                </article>
+                <% } %>
+                    <!-- <article class="article">
                 <div class="article__title">
                     <h3>Evenement n°1</h3>
                     <a href="" class="link">Lire <i class="fa-solid fa-arrow-right"></i></a>
@@ -52,7 +63,7 @@
                     <a href="" class="link">Lire <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
                 <img class="article__img" src="/img/premium_photo-1673108852141-e8c3c22a4a22.avif" alt="">
-            </article>
+            </article> -->
         </div>
 
     </main>

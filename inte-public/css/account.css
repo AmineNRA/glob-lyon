@@ -21,8 +21,31 @@ form{
     flex-direction: column;
 }
 
+label[for="avatar"]{
+    display:flex;
+    align-items:center
+}
+
+label[for="avatar"] img{
+    width: 50px;
+    height: 50px;
+}
+
+input[type="file"]{
+    margin-left: 3.9rem;
+    width: auto;
+    box-shadow: none;
+}
+
+input[type="text"]{
+    margin-left: 2.7rem;
+}
+
+input[type="email"]{
+    margin-left: 3.7rem;
+}
+
 input{
-    width: 15rem;
     height: 2rem;
     box-shadow: 0px 6px 4px -4px black;
     border: none;
@@ -33,7 +56,7 @@ input{
 }
 
 input[type="submit"]{
-    margin-left: 2.5rem;
+    margin-left: 7rem;
     background: linear-gradient(90deg, rgba(0,215,209,1) 19%, rgba(0,177,210,1) 100%);
     border-radius: 50px;
     font-size: 1.25rem;
@@ -49,6 +72,14 @@ form i{
     margin-right: 1rem;
     width: 17.5px;
     height: 21px;
+}
+
+.comment__commentary--text{
+    width: 30%;
+    background-color: #D9D9D9;
+    margin-left: 4rem;
+    padding: 1rem;
+    line-height: 1.5rem;
 }
 
 .container a {

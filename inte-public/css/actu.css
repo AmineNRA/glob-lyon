@@ -10,14 +10,14 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-    gap: 250px;
+    gap: 200px;
 }
 
 .article{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex: 1 1 50%;
-    margin-bottom: 2rem;
+    max-width: 458px;
 }
 
 .article__img{
@@ -25,7 +25,14 @@ body{
 }
 
 img{
-    width: 100%;
+    max-width: 100%;
+}
+
+h3{
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 1rem 0;
 }
 
 .article__img--filter{
@@ -44,12 +51,14 @@ img{
         flex: auto;
     }
     .article__img{
-        width: 80%;
         margin: auto;
+    }
+    .container{
+        margin-inline: 1rem;
     }
 }
 @media (max-width: 900px) {
     .container {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 }

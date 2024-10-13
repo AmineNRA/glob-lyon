@@ -30,9 +30,28 @@ linkLeft.forEach(e => {
 const buttons = document.querySelectorAll(".caroussel__btn")
 const slides = document.querySelectorAll(".slide")
 
+function changeSlideInterval() {
+
+    const slideActive = document.querySelector('.active');
+
+    let newIndex = [...slides].indexOf(slideActive) + 1
+
+    if (newIndex < 0) {
+        newIndex = [...slides].length - 1
+    }
+    if (newIndex >= [...slides].length) {
+        newIndex = 0
+    }
+
+    slides[newIndex].classList.add('active')
+    slideActive.classList.remove('active')
+}
+
+setInterval(changeSlideInterval, 5000)
 
 buttons.forEach((button) => {
     button.addEventListener('click', (e) => {
+        console.log(e.target.id)
 
         const calcNextSlide = e.target.id === 'next' ? 1 : -1;
 

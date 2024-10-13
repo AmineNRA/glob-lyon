@@ -15,11 +15,10 @@ User.init({
     },
     avatar: {
         type: DataTypes.TEXT,
-        defaultValue: '/img/user/default_avatar.webp'
+        defaultValue: '/img/user/default_avatar.png'
     },
     email: {
         type: DataTypes.TEXT,
-        allowNull: false,
         unique: true,
         validate: {
             isEmail: {
