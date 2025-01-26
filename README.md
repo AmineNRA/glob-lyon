@@ -12,7 +12,7 @@
 ### 1. Cloner le dépôt
 
 ```bash
-git clone https://github.com/votre-utilisateur/globlyon.git
+git clone git@github.com:AmineNRA/glob-lyon.git
 cd globlyon
 ```
 
