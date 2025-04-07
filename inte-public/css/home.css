@@ -2,6 +2,7 @@ body{
     background-image: url(/img/background_img/home.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 h3{
@@ -58,7 +59,7 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2rem 0;
+    margin: 2rem 4rem;
 }
 
 .article{
@@ -162,8 +163,14 @@ h3{
 }
 
 @media (max-width: 600px) {
+    .container{
+        margin: 2rem 0;
+    }
     h3{
         font-size: 1rem;
+    }
+    .caroussel{
+        height: 30vh;
     }
     .article__title{
         line-height: normal;

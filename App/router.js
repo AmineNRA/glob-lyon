@@ -44,4 +44,6 @@ router.post('/account', script.processAvatar, logController.accountAction)
 
 router.get('/logout', logController.logout);
 
+
+
 export default router

@@ -14,7 +14,7 @@ const upload = multer({
     limits: { fileSize: 5 * 1024 * 1024 }, // Limite à 5 Mo
 }).single('avatar'); // L'input doit avoir un name="avatar"
 
-// Middleware pour traiter et transformer l'image
+// Middleware pour traiter et transformer l'image 
 export default {
     processAvatar: (req, res, next) => {
         upload(req, res, async (err) => {
@@ -46,7 +46,7 @@ export default {
                 fs.writeFileSync(outputPath, processedImage);
 
                 // Ajouter l'URL du fichier enregistré à la requête pour l'utiliser plus tard
-                req.file.path = `/img/user/${outputFileName}`; // Format URL valide avec slashes
+                req.file.path = `/img/user/${outputFileName}`;
 
                 next(); // Passer au middleware suivant
             } catch (error) {

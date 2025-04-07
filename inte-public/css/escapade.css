@@ -2,6 +2,7 @@ body{
     background-image: url(/img/background_img/escapade.webp);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .filter{
@@ -152,8 +153,14 @@ body{
     display: none;
 }
 
+@media (max-width: 1024px) {
+    .container{
+        gap: 100px;
+        margin: 10rem 4rem;
+    }
+}
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .container{
         grid-template-columns: 1fr;
     }

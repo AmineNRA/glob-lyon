@@ -1,6 +1,5 @@
 import User from '../models/user.js';
 import bcrypt from 'bcrypt';
-import sharp from 'sharp';
 
 const roundedCorners = Buffer.from(
     '<svg><rect x="0" y="0" width="100" height="100" rx="50" ry="50"/></svg>'

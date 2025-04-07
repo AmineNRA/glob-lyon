@@ -1,6 +1,8 @@
 body{
     background-image: url(/img/background_img/activity.webp);
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 
 }
 
@@ -76,7 +78,17 @@ h3{
     font-weight: bold;
 }
 
-@media (max-width: 600px) {
+/* .container a:hover {
+    color: #00D7D1;
+    transform: scale(1.1);
+} */
+
+@media (max-width: 1440px) {
+    .article__info--desc > p{
+        width: auto;
+    }
+}
+@media (max-width: 800px) {
     .article{
         margin: 1rem;
         align-items: center;

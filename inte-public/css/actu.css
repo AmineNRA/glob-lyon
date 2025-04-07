@@ -2,6 +2,7 @@ body{
     background-image: url(/img/background_img/actu.webp);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .container{
@@ -43,6 +44,13 @@ h3{
     padding: 1rem;
     top: 10px;
     left: 10px;
+}
+
+@media (max-width: 1024px) {
+    .container{
+        gap: 100px;
+        margin: 10rem 4rem;
+    }
 }
 
 @media (max-width: 600px) {

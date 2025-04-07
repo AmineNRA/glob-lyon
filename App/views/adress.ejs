@@ -19,20 +19,22 @@
                 <article class="article">
                     <a href="/article/<%=article.id%>"><img class="article__img" src="<%= article.image %>" alt=""></a>
                     <div class="article__info">
-                        <span><%=article.Tag.label%></span>
+                        <span>
+                            <%=article.Tag.label%>
+                        </span>
                         <div class="article__info--desc">
-                                <h3>
-                                    <a href="/article/<%=article.id%>">
+                            <h3>
+                                <a href="/article/<%=article.id%>">
                                     <%= article.title %>
-                                    </a>
-                                </h3>
+                                </a>
+                            </h3>
                             <p class="text">
                                 <%= article.description %>
                             </p>
                         </div>
                     </div>
                 </article>
-            <% } %>
+                <% } %>
         </div>
     </main>
 

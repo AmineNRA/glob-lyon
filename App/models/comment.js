@@ -11,7 +11,15 @@ Comment.init({
         type: DataTypes.TEXT,
         allowNull: false,
         validate: {
-            notEmpty: true,
+            notEmpty: { msg: 'Le commentaire ne peut pas être vide.' },
+            len: { args: [1, 500], msg: 'Le commentaire doit contenir entre 1 et 500 caractères.' },
+            isSafeContent(value) {
+                const prohibitedTags = /<script>|<\/script>/i;
+                if (prohibitedTags.test(value)) {
+                    throw new Error('Les balises <script> ne sont pas autorisées.');
+                }
+            },
+
         }
     },
     article_id: {

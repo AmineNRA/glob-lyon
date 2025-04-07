@@ -68,7 +68,7 @@ function truncateText() {
     textContainers.forEach(textContainer => {
         textContainer.style.height = maxHeight + 'px';
 
-        if (window.innerWidth < 600) {
+        if (window.innerWidth < 1030) {
             if (textContainer.scrollWidth > maxHeight) {
                 const text = textContainer.innerText;
                 textContainer.innerText = text.slice(0, 100) + '...';

@@ -182,6 +182,15 @@ h2{
     color: white;
 }
 
+.fa-circle-user::before{
+    color: #266DD3;
+}
+
+.fa-power-off{
+    color: red;
+}
+
+
 .error{
     text-align: center;
     margin: 2rem 0;
